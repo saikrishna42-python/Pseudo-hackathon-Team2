@@ -1,18 +1,82 @@
 Model {
   Name			  "generic"
-  Version		  8.7
-  MdlSubVersion		  1
-  SavedCharacterEncoding  "ISO-8859-15"
+  Version		  10.0
+  SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.365"
+    ComputedModelVersion    "1.395"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
     NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    IsArchitectureModel	    0
+    IsAUTOSARArchitectureModel 0
+    NumParameterArguments   0
+    NumExternalFileReferences 8
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "generic/CarMaker/IPG Vehicle/VehicleSource_BuiltIn"
+      SID		      "2193"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Sensors/Object Sensor Object"
+      Path		      "generic/CarMaker/Sensor/For Iterator Subsystem/Object Sensor Object"
+      SID		      "2254"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Traffic Object"
+      Path		      "generic/CarMaker/Sensor/For Iterator Subsystem/Traffic Object"
+      SID		      "2257"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Sensors/Object Sensor"
+      Path		      "generic/CarMaker/Sensor/Object Sensor"
+      SID		      "2263"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/Sensor/Read CM Dict"
+      SID		      "2277"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/Sensor/Read CM Dict1"
+      SID		      "2278"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/Sensor/Read CM Dict2"
+      SID		      "2280"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Edit Model\nConfiguration"
+      Path		      "generic/Edit Model Configuration"
+      SID		      "1727"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
   }
+  WebScopes_FoundationPlugin "on"
+  DiagnosticSuppressor	  "on"
+  LogicAnalyzerPlugin	  "on"
+  AnimationPlugin	  "on"
+  NotesPlugin		  "on"
+  SLCCPlugin		  "on"
+  EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -22,7 +86,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "glnxa64"
+  LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -32,7 +96,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [121.0, 174.0, 508.0, 472.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -42,6 +106,7 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[9]
+	Minimized		"Unset"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -49,35 +114,113 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[466.0, 298.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, -5.0]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		5
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [0]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, -5.0]
+	  SceneRectInView	  [0.0, -5.0, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1726"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-306.59999999999991, -208.59999999999997]
+	  SceneRectInView	  [-306.59999999999991, -208.59999999999997, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2238"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-1.1368683772161603e-13, 179.0]
+	  SceneRectInView	  [-1.1368683772161603e-13, 179.0, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2244"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-172.64687499999991, -276.09999999999997]
+	  SceneRectInView	  [-172.64687499999991, -276.09999999999997, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2254"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-428.76015624999991, 100.90000000000003]
+	  SceneRectInView	  [-428.76015624999991, 100.90000000000003, 1500.0, 604.0]
+	}
+	PropName		"EditorsInfo"
       }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		10
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[512]
+	Height			[384]
+	Minimized		"Unset"
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAARgD///8AAAeAAAADOQAAAAEAAAACAAAAAQAAAAL8AAAAAA=="
+      Array {
+	Type			"Cell"
+	Dimension		0
+	PropName		"PersistedApps"
+      }
+      WindowUuid	      "7487e311-504d-41a6-822a-7a6c7a73d97e"
     }
+    BDUuid		    "e8c75c68-221f-4289-bda6-4cf9e865ed22"
   }
+  HideAutomaticNames	  on
   Created		  "Fri Feb 08 15:09:51 2002"
   Creator		  "fh"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "IPG"
+  LastModifiedBy	  "SDG5KOR"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 29 11:38:38 2019"
-  RTWModifiedTimeStamp	  410029671
-  ModelVersionFormat	  "1.%<AutoIncrement:365>"
-  ConfigurationManager	  "none"
+  LastModifiedDate	  "Mon Sep 05 16:46:19 2022"
+  RTWModifiedTimeStamp	  584297114
+  ModelVersionFormat	  "1.%<AutoIncrement:395>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  off
   ShowEditTimeAdvisorChecks off
@@ -91,6 +234,7 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  off
   VariantCondition	  off
+  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
@@ -98,17 +242,27 @@ Model {
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks off
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  on
   SimulationMode	  "normal"
+  SILPILModeSetting	  "automated"
+  SILPILSystemUnderTest	  "topmodel"
+  SILPILSimulationModeTopModel "normal"
+  SILPILSimulationModeModelRef "normal"
+  SimTabSimulationMode	  "normal"
+  CodeVerificationMode	  "software-in-the-loop (sil)"
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -118,7 +272,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    6
+    $ObjectID		    11
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "generic"
     Array {
@@ -157,24 +311,30 @@ Model {
   ExtModeAutoUpdateStatusClock off
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
   Array {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      7
-      Version		      "1.16.2"
+      $ObjectID		      12
+      Version		      "19.1.1"
+      DisabledProps	      []
+      Description	      ""
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  8
-	  Version		  "1.16.2"
+	  $ObjectID		  13
+	  Version		  "19.1.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
-	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
 	  ConsecutiveZCsStepRelTol "10*128*eps"
@@ -185,8 +345,7 @@ Model {
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
-	  SolverMode		  "Auto"
-	  EnableConcurrentExecution off
+	  EnableMultiTasking	  on
 	  ConcurrentTasks	  off
 	  Solver		  "ode45"
 	  SolverName		  "ode45"
@@ -202,10 +361,17 @@ Model {
 	  AutoInsertRateTranBlk	  off
 	  SampleTimeConstraint	  "Unconstrained"
 	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  9
-	  Version		  "1.16.2"
+	  $ObjectID		  14
+	  Version		  "19.1.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -215,7 +381,7 @@ Model {
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
-	  SaveCompleteFinalSimState off
+	  SaveOperatingPoint	  off
 	  SaveFormat		  "Array"
 	  SignalLoggingSaveFormat "ModelDataLogs"
 	  SaveOutput		  on
@@ -238,26 +404,35 @@ Model {
 	  ReturnWorkspaceOutputsName "out"
 	  Refine		  "1"
 	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
 	  LoggingFileName	  "out.mat"
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  10
-	  Version		  "1.16.2"
+	  $ObjectID		  15
+	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    4
+	    Dimension		    9
 	    Cell		    "ZeroExternalMemoryAtStartup"
 	    Cell		    "ZeroInternalMemoryAtStartup"
 	    Cell		    "NoFixptDivByZeroProtection"
 	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
+	  Components		  []
 	  BlockReduction	  on
 	  BooleanDataType	  off
 	  ConditionallyExecuteInputs on
 	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
+	  GainParamInheritBuiltInType off
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -268,6 +443,7 @@ Model {
 	  CachingGlobalReferences off
 	  GlobalBufferReuse	  on
 	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
@@ -287,20 +463,40 @@ Model {
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
-	  OptimizeModelRefInitCode off
 	  LifeSpan		  "inf"
 	  MaxStackSize		  "Inherit from target"
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  UseRowMajorAlgorithm	  off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  LabelGuidedReuse	  off
+	  MultiThreadedLoops	  off
+	  DenormalBehavior	  "GradualUnderflow"
+	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  11
-	  Version		  "1.16.2"
+	  $ObjectID		  16
+	  Version		  "19.1.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Components		  []
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -328,6 +524,7 @@ Model {
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
 	  SigSpecEnsureSampleTimeMsg "warning"
 	  CheckMatrixSingularityMsg "none"
 	  IntegerOverflowMsg	  "warning"
@@ -344,11 +541,12 @@ Model {
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
 	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  FcnCallInpInsideContextMsg "warning"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
 	  SFcnCompatibilityMsg	  "none"
 	  FrameProcessingCompatibilityMsg "error"
 	  UniqueDataStoreMsg	  "none"
@@ -356,6 +554,7 @@ Model {
 	  RootOutportRequireBusObject "warning"
 	  AssertControl		  "UseLocalSettings"
 	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
 	  ModelReferenceIOMsg	  "none"
 	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
 	  ModelReferenceVersionMismatchMessage "none"
@@ -365,8 +564,11 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
-	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
+	  OperatingPointInterfaceChecksumMismatchMsg "warning"
+	  NonCurrentReleaseOperatingPointMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -374,24 +576,39 @@ Model {
 	  SymbolicDimMinMaxWarning "warning"
 	  LossOfSymbolicDimsSimulationWarning "warning"
 	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
 	  SFUnexpectedBacktrackingDiag "warning"
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
 	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
 	  SFUndirectedBroadcastEventsDiag "warning"
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "warning"
+	  SFMachineParentedDataDiag "warning"
 	  IntegerSaturationMsg	  "warning"
 	  AllowedUnitSystems	  "all"
 	  UnitsInconsistencyMsg	  "warning"
 	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	  DebugExecutionForFMUViaOutOfProcess off
+	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  12
-	  Version		  "1.16.2"
+	  $ObjectID		  17
+	  Version		  "19.1.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -400,6 +617,8 @@ Model {
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
 	  ProdLargestAtomicInteger "Char"
 	  ProdLargestAtomicFloat  "None"
 	  ProdIntDivRoundTo	  "Undefined"
@@ -416,6 +635,8 @@ Model {
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
@@ -430,10 +651,14 @@ Model {
 	  ProdEqTarget		  on
 	  UseEmbeddedCoderFeatures on
 	  UseSimulinkCoderFeatures on
+	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  13
-	  Version		  "1.16.2"
+	  $ObjectID		  18
+	  Version		  "19.1.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
@@ -442,54 +667,108 @@ Model {
 	  ParallelModelReferenceMATLABWorkerInit "None"
 	  ModelReferenceNumInstancesAllowed "Multi"
 	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
 	  ModelReferencePassRootInputsByReference on
 	  ModelReferenceMinAlgLoopOccurrences off
 	  PropagateSignalLabelsOutOfModel off
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  14
-	  Version		  "1.16.2"
+	  $ObjectID		  19
+	  Version		  "19.1.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
 	  SFSimEcho		  on
 	  SimCtrlC		  on
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  15
-	  Version		  "1.16.2"
+	  $ObjectID		  20
+	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    1
+	    Dimension		    16
 	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
 	  SystemTargetFile	  "grt.tlc"
 	  HardwareBoard		  "None"
+	  ShowCustomHardwareApp	  off
+	  ShowEmbeddedHardwareApp off
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
 	  GenerateMakefile	  on
 	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
 	  TemplateMakefile	  "grt_default_tmf"
 	  PostCodeGenCommand	  ""
-	  Description		  ""
 	  GenerateReport	  off
-	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
 	  ProfileTLC		  off
 	  TLCDebug		  off
 	  TLCCoverage		  off
 	  TLCAssert		  off
 	  RTWUseLocalCustomCode	  off
 	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
 	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
 	  PortableWordSizes	  off
@@ -497,7 +776,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
+	  CodeProfilingInstrumentation "off"
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -511,6 +790,7 @@ Model {
 	  GenerateCodeReplacementReport	off
 	  GenerateMissedCodeReplacementReport off
 	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
 	  RTWCustomCompilerOptimizations ""
 	  CheckMdlBeforeBuild	  "Off"
 	  SharedConstantsCachingThreshold 1024
@@ -518,11 +798,11 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      16
-	      Version		      "1.16.2"
+	      $ObjectID		      21
+	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
-		Dimension		9
+		Dimension		28
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"InsertBlockDesc"
 		Cell			"SFDataObjDesc"
@@ -532,54 +812,87 @@ Model {
 		Cell			"ParamNamingRule"
 		Cell			"InlinedPrmAccess"
 		Cell			"CustomSymbolStr"
+		Cell			"IgnoreTestpoints"
+		Cell			"BlockCommentType"
+		Cell			"InsertPolySpaceComments"
+		Cell			"MATLABFcnDesc"
+		Cell			"InternalIdentifier"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		Cell			"ReqsInCode"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
+	      Components	      []
+	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
 	      IgnoreCustomStorageClasses on
 	      IgnoreTestpoints	      off
-	      IncHierarchyInIds	      off
 	      MaxIdLength	      63
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
 	      OperatorAnnotations     off
-	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
 	      MATLABFcnDesc	      off
-	      IncDataTypeInIds	      off
 	      MangleLength	      1
+	      SharedChecksumLength    8
 	      CustomSymbolStrGlobalVar "$R$N$M"
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
 	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
 	      CustomSymbolStrFcnArg   "rt$I$N$M"
 	      CustomSymbolStrBlkIO    "rtb_$N$M"
 	      CustomSymbolStrTmpVar   "$N$M"
 	      CustomSymbolStrMacro    "$R$N$M"
 	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
 	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
 	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
 	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
 	      InternalIdentifier      "Shortened"
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	      EnumMemberNameClash     "error"
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      17
-	      Version		      "1.16.2"
+	      $ObjectID		      22
+	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
-		Dimension		10
+		Dimension		16
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"GenerateAllocFcn"
 		Cell			"SuppressErrorStatus"
@@ -590,19 +903,29 @@ Model {
 		Cell			"SupportNonInlinedSFcns"
 		Cell			"SupportComplex"
 		Cell			"SupportAbsoluteTime"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		Cell			"ExistingSharedCode"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
+	      Components	      []
 	      TargetFcnLib	      "ansi_tfl_tmw.mat"
 	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
 	      GenFloatMathFcnCalls    "NOT IN USE"
 	      TargetLangStandard      "C89/C90 (ANSI)"
 	      CodeReplacementLibrary  "None"
 	      UtilityFuncGeneration   "Auto"
-	      ERTMultiwordTypeDef     "System defined"
-	      ERTMultiwordLength      256
+	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
 	      GenerateSampleERTMain   off
 	      GenerateTestInterfaces  off
 	      ModelReferenceCompliant on
@@ -613,8 +936,8 @@ Model {
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns off
 	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
@@ -622,22 +945,36 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
-	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
+	      MDXCompliant	      off
 	      GRTInterface	      on
 	      GenerateAllocFcn	      off
 	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -645,6 +982,7 @@ Model {
 	      ExtModeStaticAllocSize  1000000
 	      ExtModeTransport	      0
 	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
 	      ExtModeIntrfLevel	      "Level1"
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
@@ -657,9 +995,11 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  18
-	  Version		  "1.16.2"
+	  $ObjectID		  23
+	  Version		  "19.1.1"
+	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
+	  Components		  []
 	  Name			  "Simulink Coverage"
 	  CovEnable		  off
 	  CovScope		  "EntireSystem"
@@ -667,7 +1007,10 @@ Model {
 	  RecordCoverage	  off
 	  CovPath		  "/"
 	  CovSaveName		  "covdata"
+	  CovCompData		  ""
 	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
 	  CovNameIncrementing	  off
 	  CovHtmlReporting	  on
 	  CovForceBlockReductionOff on
@@ -679,8 +1022,10 @@ Model {
 	  CovSaveOutputData	  on
 	  CovOutputDir		  "slcov_output/$ModelName$"
 	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
 	  CovReportOnPause	  on
-	  CovModelRefEnable	  "Off"
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
 	  CovExternalEMLEnable	  off
 	  CovSFcnEnable		  on
 	  CovBoundaryAbsTol	  1e-05
@@ -688,28 +1033,29 @@ Model {
 	  CovUseTimeInterval	  off
 	  CovStartTime		  0
 	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
 	}
 	PropName		"Components"
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 517, 260, 1403, 918 ] 
+      ConfigPrmDlgPosition    [ 517, 260, 1403, 918 ]
+      ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    7
+    $ObjectID		    12
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    19
+    $ObjectID		    24
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
     DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
     DefaultExtrapolationMethodBetweenContTasks "None"
-    AutoInsertRateTranBlk   [0]
   }
   ExplicitPartitioning	  off
   BlockDefaults {
@@ -722,6 +1068,7 @@ Model {
     FontWeight		    "normal"
     FontAngle		    "normal"
     ShowName		    on
+    HideAutomaticName	    on
     BlockRotation	    0
     BlockMirror		    off
   }
@@ -735,7 +1082,12 @@ Model {
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
+    MarkupType		    "model"
     UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
   }
   LineDefaults {
     FontName		    "Helvetica"
@@ -747,7 +1099,7 @@ Model {
     SelfModifiable	    "off"
     IconFrame		    "on"
     IconOpaque		    "opaque"
-    RunInitForIconRedraw    "off"
+    RunInitForIconRedraw    "analyze"
     IconRotate		    "none"
     PortRotate		    "default"
     IconUnits		    "autoscale"
@@ -770,10 +1122,23 @@ Model {
       NonVirtualBus	      off
     }
     Block {
+      BlockType		      BusSelector
+    }
+    Block {
       BlockType		      Demux
       Outputs		      "4"
       DisplayOption	      "none"
       BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      ForIterator
+      ResetStates	      "held"
+      IterationSource	      "internal"
+      IterationLimit	      "5"
+      ExternalIncrement	      off
+      ShowIterationPort	      on
+      IndexMode		      "One-based"
+      IterationVariableDataType	"int32"
     }
     Block {
       BlockType		      Ground
@@ -811,15 +1176,36 @@ Model {
       SampleTime	      "-1"
       SignalType	      "auto"
       SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
+      MultiThreadCoSim	      "auto"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
     }
     Block {
       BlockType		      Stop
@@ -832,7 +1218,7 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
-      CheckFcnCallInpInsideContextMsg off
+      ScheduleAs	      "Sample time"
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -851,10 +1237,18 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
+      VariantControlMode      "Expression"
+      Variant		      off
       GeneratePreprocessorConditionals off
+      AllowZeroVariantControls off
+      PropagateVariantConditions off
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
+      IsObserver	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Terminator
@@ -862,8 +1256,11 @@ Model {
   }
   System {
     Name		    "generic"
-    Location		    [121, 174, 629, 646]
+    Location		    [-7, -7, 1543, 831]
     Open		    on
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -876,7 +1273,8 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "2236"
+    SIDHighWatermark	    "2281"
+    SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      SubSystem
       Name		      "CarMaker"
@@ -887,17 +1285,19 @@ Model {
       BackgroundColor	      "lightBlue"
       TreatAsAtomicUnit	      on
       RequestExecContextInheritance off
-      Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		20
+	$ObjectID		25
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('CarMakerSys.png'));"
       }
       System {
 	Name			"CarMaker"
-	Location		[154, 388, 1091, 828]
-	Open			off
+	Location		[-7, -7, 1543, 831]
+	Open			on
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -909,6 +1309,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "CM_FIRST"
@@ -918,11 +1319,13 @@ Model {
 	  ZOrder		  -1
 	  BackgroundColor	  "green"
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  System {
 	    Name		    "CM_FIRST"
 	    Location		    [199, 372, 850, 921]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -934,6 +1337,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sync_In"
@@ -966,8 +1370,6 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"IF Environment (in)"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -983,86 +1385,58 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Env Temperature"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		2
 		Name			"Env AirDensity"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		3
 		Name			"Env AirPressure"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		4
 		Name			"Env AirHumidity"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		5
 		Name			"Env SolarRadiation"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		6
 		Name			"Env WindVel_tot x"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		7
 		Name			"Env WindVel_tot y"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		8
 		Name			"Env WindVel_tot z"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		9
 		Name			"Env yDay"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		10
 		Name			"Env Time"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		11
 		Name			"Env PoI_GCS Long"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		12
 		Name			"Env PoI_GCS Lat"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		13
 		Name			"Env PoI_GCS Elev"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		14
 		Name			"Env sRoad"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1077,6 +1451,7 @@ Model {
 	      Parameters	      "'Environment'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      S-Function
@@ -1090,6 +1465,7 @@ Model {
 	      Parameters	      "'IoIn'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      Terminator
@@ -1298,11 +1674,13 @@ Model {
 	  ZOrder		  -2
 	  BackgroundColor	  "green"
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  System {
 	    Name		    "CM_LAST"
 	    Location		    [239, 402, 798, 818]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1314,6 +1692,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sync_In"
@@ -1334,6 +1713,7 @@ Model {
 	      Parameters	      "'CM_User'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      S-Function
@@ -1347,6 +1727,7 @@ Model {
 	      Parameters	      "'IoOut'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -1391,11 +1772,13 @@ Model {
 	  ZOrder		  -3
 	  BackgroundColor	  "green"
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  System {
 	    Name		    "DrivMan"
 	    Location		    [253, 276, 890, 1063]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1407,6 +1790,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sync_In"
@@ -1448,104 +1832,70 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"DrivMan SST"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		2
 		Name			"DrivMan Key"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		3
 		Name			"DrivMan UserSignal0"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		4
 		Name			"DrivMan UserSignal1"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		5
 		Name			"DrivMan UserSignal2"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		6
 		Name			"DrivMan UserSignal3"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		7
 		Name			"DrivMan UserSignal4"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		8
 		Name			"DrivMan SelectorCtrl"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		9
 		Name			"DrivMan GearNo"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		10
 		Name			"DrivMan Brake"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		11
 		Name			"DrivMan BrakePark"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		12
 		Name			"DrivMan Clutch"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		13
 		Name			"DrivMan Gas"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		14
 		Name			"DrivMan Steering Ang"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		15
 		Name			"DrivMan Steering AngVel"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		16
 		Name			"DrivMan Steering AngAcc"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		17
 		Name			"DrivMan Steering Trq"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1560,6 +1910,7 @@ Model {
 	      Parameters	      "'DrivMan'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -1772,8 +2123,6 @@ Model {
 	      "rpose."
 	      Position		      [257, 487, 487, 513]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      ZOrder		      -1
 	    }
 	  }
@@ -1796,11 +2145,13 @@ Model {
 	  BackgroundColor	  "green"
 	  TreatAsAtomicUnit	  on
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  System {
 	    Name		    "IPG Vehicle"
 	    Location		    [256, 289, 1024, 913]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1812,6 +2163,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sync_In"
@@ -1883,11 +2235,13 @@ Model {
 	      ZOrder		      -8
 	      BackgroundColor	      "green"
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"Brake"
 		Location		[94, 240, 1088, 995]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -1899,6 +2253,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Sync_In"
@@ -1937,11 +2292,10 @@ Model {
 		  Parameters		  "'Brake'"
 		  SFunctionDeploymentMode off
 		  EnableBusSupport	  off
+		  SFcnIsStateOwnerBlock	  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "Sync"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -1956,6 +2310,7 @@ Model {
 		  Parameters		  "'BrakeUpd'"
 		  SFunctionDeploymentMode off
 		  EnableBusSupport	  off
+		  SFcnIsStateOwnerBlock	  off
 		}
 		Block {
 		  BlockType		  BusCreator
@@ -1976,11 +2331,13 @@ Model {
 		  Position		  [715, 240, 810, 280]
 		  ZOrder		  -7
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "CreateBus Vhcl.Wheel.PT"
 		    Location		    [227, 297, 786, 882]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -1992,6 +2349,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In"
@@ -2024,122 +2382,82 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel FL Trq_Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel FL Trq_BrakeReg_trg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel FL Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel FL WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel FR Trq_Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel FR Trq_BrakeReg_trg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel FR Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel FR WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel RL Trq_Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel RL Trq_BrakeReg_trg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel RL Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel RL WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Wheel RR Trq_Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl Wheel RR Trq_BrakeReg_trg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    15
 		    Name		    "Vhcl Wheel RR Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    16
 		    Name		    "Vhcl Wheel RR WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    17
 		    Name		    "Vhcl Trq_DriveSrc_trg d0"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    18
 		    Name		    "Vhcl Trq_DriveSrc_trg d1"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    19
 		    Name		    "Vhcl Trq_DriveSrc_trg d2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    20
 		    Name		    "Vhcl Trq_DriveSrc_trg d3"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -2359,98 +2677,66 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Brake IF Trq_WB FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "Brake IF Trq_WB FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Brake IF Trq_WB RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Brake IF Trq_WB RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "Brake IF Trq_PB FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "Brake IF Trq_PB FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "Brake IF Trq_PB RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "Brake IF Trq_PB RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "Brake IF Trq_Reg_trg FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "Brake IF Trq_Reg_trg FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "Brake IF Trq_Reg_trg RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    12
 		    Name		    "Brake IF Trq_Reg_trg RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    13
 		    Name		    "Brake IF Trq_DriveSrc_trg d0"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    14
 		    Name		    "Brake IF Trq_DriveSrc_trg d1"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    15
 		    Name		    "Brake IF Trq_DriveSrc_trg d2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    16
 		    Name		    "Brake IF Trq_DriveSrc_trg d3"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2681,12 +2967,10 @@ Model {
 		}
 		Annotation {
 		  SID			  "1779"
-		  Name			  "When replacing the entire braking system,\nbe sure to disable the IPG brake model by using the brake\n"
-		  "model 'Model Manager off' in the vehicle GUI."
+		  Name			  "When replacing the entire braking system,\nbe sure to disable the IPG brake model by using the brake\nmo"
+		  "del 'Model Manager off' in the vehicle GUI."
 		  Position		  [69, 429, 328, 467]
 		  InternalMargins	  [0, 0, 0, 0]
-		  FixedHeight		  off
-		  FixedWidth		  off
 		  ZOrder		  -1
 		}
 		Annotation {
@@ -2694,8 +2978,6 @@ Model {
 		  Name			  "<Your model here>"
 		  Position		  [493, 287, 579, 301]
 		  InternalMargins	  [0, 0, 0, 0]
-		  FixedHeight		  off
-		  FixedWidth		  off
 		  ZOrder		  -2
 		}
 	      }
@@ -2709,11 +2991,13 @@ Model {
 	      ZOrder		      -9
 	      BackgroundColor	      "green"
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CarAndTrailer"
 		Location		[12, 315, 1249, 961]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2725,6 +3009,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Sync_In"
@@ -2769,11 +3054,13 @@ Model {
 		  ZOrder		  -5
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "CarAndTrailerUpd"
 		    Location		    [163, 246, 834, 958]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2785,6 +3072,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -2876,8 +3164,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "user vehicle only"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -2892,6 +3178,7 @@ Model {
 		    Parameters		    "'CarAndTrUpd'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    SubSystem
@@ -2901,11 +3188,13 @@ Model {
 		    Position		    [325, 295, 465, 335]
 		    ZOrder		    -12
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    System {
 		    Name		    "CreateBus Brake.IF.In"
 		    Location		    [308, 402, 873, 877]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2917,6 +3206,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In"
@@ -2949,56 +3239,38 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Brake IF T_env"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Brake IF Trq_Reg_max FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Brake IF Trq_Reg_max FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Brake IF Trq_Reg_max RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Brake IF Trq_Reg_max RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Brake IF Trq_Reg FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Brake IF Trq_Reg FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Brake IF Trq_Reg RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Brake IF Trq_Reg RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3227,11 +3499,13 @@ Model {
 		  ZOrder		  -6
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "Forces"
 		    Location		    [231, 195, 698, 1065]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3243,6 +3517,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -3332,11 +3607,13 @@ Model {
 		    ZOrder		    -10
 		    BackgroundColor	    "green"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    System {
 		    Name		    "External Suspension Forces"
 		    Location		    [164, 129, 872, 1181]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3348,6 +3625,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -3501,50 +3779,34 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "lSpring FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "lSpring FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "lSpring RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "lSpring RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "vSpring FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "vSpring FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "vSpring RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "vSpring RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3560,50 +3822,34 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "lDamp FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "lDamp FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "lDamp RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "lDamp RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "vDamp FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "vDamp FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "vDamp RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "vDamp RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3619,50 +3865,34 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "lStabi FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "lStabi FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "lStabi RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "lStabi RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "vStabi FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "vStabi FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "vStabi RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "vStabi RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3678,50 +3908,34 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "lBuf FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "lBuf FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "lBuf RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "lBuf RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "vBuf FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "vBuf FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "vBuf RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "vBuf RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3734,8 +3948,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FSpring FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3748,8 +3960,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FSpring FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3762,8 +3972,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FStabi RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3776,8 +3984,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FStabi RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3790,8 +3996,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FBuf RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3804,8 +4008,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FBuf RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3818,8 +4020,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FBuf FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3832,8 +4032,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FBuf FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3846,8 +4044,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FSpring RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3860,8 +4056,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FSpring RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3874,8 +4068,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FDamp FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3888,8 +4080,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FDamp FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3902,8 +4092,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FDamp RL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3916,8 +4104,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FDamp RR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3930,8 +4116,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FStabi FL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -3944,8 +4128,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "FStabi FR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -4552,8 +4734,6 @@ Model {
 		    " in the vehicle parameter file\nis either not present or is empty or has the value \"CM4SL\"."
 		    Position		    [124, 758, 417, 796]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ZOrder		    -1
 		    }
 		    Annotation {
@@ -4561,8 +4741,6 @@ Model {
 		    Name		    "Insert your suspension forces model here."
 		    Position		    [233, 242, 420, 256]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ForegroundColor	    "magenta"
 		    ZOrder		    -2
 		    }
@@ -4577,11 +4755,13 @@ Model {
 		    ZOrder		    -11
 		    BackgroundColor	    "green"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    System {
 		    Name		    "Tires"
 		    Location		    [156, 117, 872, 1218]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4593,6 +4773,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -4698,44 +4879,30 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_In Load"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_In vxtrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_In vytrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_In Rim_rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_In Rim_turnv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_In Camber"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_In mu"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -4751,44 +4918,30 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_In Load"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_In vxtrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_In vytrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_In Rim_rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_In Rim_turnv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_In Camber"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_In mu"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -4804,44 +4957,30 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_In Load"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_In vxtrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_In vytrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_In Rim_rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_In Rim_turnv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_In Camber"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_In mu"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -4857,44 +4996,30 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_In Load"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_In vxtrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_In vytrans"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_In Rim_rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_In Rim_turnv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_In Camber"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_In mu"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -4906,77 +5031,57 @@ Model {
 		    ZOrder		    -14
 		    BackgroundColor	    "magenta"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_Out Slp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_Out Alpha"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_Out TurnSlp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_Out rBelt_eff"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_Out vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_Out LongFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_Out SideFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Tire_Out LoadFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Tire_Out OverturnTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Tire_Out RollResist"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Tire_Out AlignTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "TireFL"
 		    Location		    [652, 278, 1154, 1067]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4988,6 +5093,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -5449,8 +5555,6 @@ Model {
 		    Name		    "Insert your tire model here."
 		    Position		    [161, 187, 282, 201]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ForegroundColor	    "magenta"
 		    ZOrder		    -1
 		    }
@@ -5465,77 +5569,57 @@ Model {
 		    ZOrder		    -15
 		    BackgroundColor	    "magenta"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_Out Slp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_Out Alpha"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_Out TurnSlp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_Out rBelt_eff"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_Out vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_Out LongFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_Out SideFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Tire_Out LoadFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Tire_Out OverturnTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Tire_Out RollResist"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Tire_Out AlignTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "TireFR"
 		    Location		    [648, 253, 1150, 1042]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5547,6 +5631,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -6008,8 +6093,6 @@ Model {
 		    Name		    "Insert your tire model here."
 		    Position		    [161, 187, 282, 201]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ForegroundColor	    "magenta"
 		    ZOrder		    -1
 		    }
@@ -6024,77 +6107,57 @@ Model {
 		    ZOrder		    -16
 		    BackgroundColor	    "magenta"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_Out Slp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_Out Alpha"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_Out TurnSlp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_Out rBelt_eff"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_Out vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_Out LongFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_Out SideFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Tire_Out LoadFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Tire_Out OverturnTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Tire_Out RollResist"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Tire_Out AlignTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "TireRL"
 		    Location		    [648, 253, 1150, 1042]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6106,6 +6169,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -6567,8 +6631,6 @@ Model {
 		    Name		    "Insert your tire model here."
 		    Position		    [161, 187, 282, 201]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ForegroundColor	    "magenta"
 		    ZOrder		    -1
 		    }
@@ -6583,77 +6645,57 @@ Model {
 		    ZOrder		    -17
 		    BackgroundColor	    "magenta"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Tire_Out Slp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Tire_Out Alpha"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Tire_Out TurnSlp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Tire_Out rBelt_eff"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Tire_Out vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Tire_Out LongFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Tire_Out SideFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Tire_Out LoadFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Tire_Out OverturnTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Tire_Out RollResist"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Tire_Out AlignTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "TireRR"
 		    Location		    [648, 253, 1150, 1042]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6665,6 +6707,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -7126,8 +7169,6 @@ Model {
 		    Name		    "Insert your tire model here."
 		    Position		    [161, 187, 282, 201]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ForegroundColor	    "magenta"
 		    ZOrder		    -1
 		    }
@@ -7931,8 +7972,6 @@ Model {
 		    "r file!\nAn example parameter file can be found in Data/Tire/DT_CM4SL_UserTire."
 		    Position		    [121, 794, 583, 820]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ZOrder		    -1
 		    }
 		    }
@@ -7946,11 +7985,13 @@ Model {
 		    ZOrder		    -12
 		    BackgroundColor	    "green"
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    System {
 		    Name		    "Vehicle Forces"
 		    Location		    [115, 118, 793, 1164]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7962,6 +8003,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -8007,8 +8049,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Aero IF (in)"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -8035,98 +8075,66 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Load_0 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Load_0 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Load_0 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Load_0 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Car Load_1 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Car Load_1 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Car Load_1 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Car Load_1 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Car Load_2 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Car Load_2 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Car Load_2 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Car Load_2 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Car Load_3 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Car Load_3 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    15
 		    Name		    "Car Load_3 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    16
 		    Name		    "Car Load_3 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -8142,74 +8150,50 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Virtual Frc_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Virtual Frc_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Virtual Frc_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Virtual Frc_0 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Car Virtual Frc_0 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Car Virtual Frc_0 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Car Virtual Trq_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Car Virtual Trq_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Car Virtual Trq_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Car Virtual Trq_0 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Car Virtual Trq_0 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Car Virtual Trq_0 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -8225,80 +8209,54 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "car Aero ApproachVel_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "car Aero ApproachVel_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "car Aero ApproachVel_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "car Aero tau_1"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "car Aero PoA_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "car Aero PoA_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "car Aero PoA_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "car Aero Frc_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "car Aero Frc_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "car Aero Frc_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "car Aero Trq_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "car Aero Trq_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "car Aero Trq_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -8313,6 +8271,7 @@ Model {
 		    Parameters		    "'Forces'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    Terminator
@@ -9089,11 +9048,13 @@ Model {
 		  ZOrder		  -8
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "Kinematics"
 		    Location		    [185, 318, 625, 957]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -9105,6 +9066,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -9134,6 +9096,7 @@ Model {
 		    Parameters		    "'Kinematics'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -9303,11 +9266,13 @@ Model {
 		  ZOrder		  -9
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "Kinetics"
 		    Location		    [192, 185, 760, 1133]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -9319,6 +9284,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -9499,74 +9465,50 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Trailer Load_0 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Trailer Load_0 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Trailer Load_0 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Trailer Load_0 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Trailer Load_1 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Trailer Load_1 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Trailer Load_1 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Trailer Load_1 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Trailer Load_2 mass"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Trailer Load_2 tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Trailer Load_2 ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Trailer Load_2 tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9582,38 +9524,26 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Hitch tx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Hitch ty"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Hitch tz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Hitch vx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Car Hitch vy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Car Hitch vz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9629,38 +9559,26 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Fr1 rx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Fr1 ry"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Fr1 rz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Fr1 rvx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Car Fr1 rvy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Car Fr1 rvz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9675,26 +9593,18 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "car Susp FL GenInert2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "car Susp FR GenInert2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "car Susp FL GenFrc2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "car Susp FR GenFrc2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9709,26 +9619,18 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Trq_T2WFL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Trq_T2WFR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Trq_T2WRL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Trq_T2WRR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9743,6 +9645,7 @@ Model {
 		    Parameters		    "'Kinetics'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -10263,11 +10166,13 @@ Model {
 		  ZOrder		  -10
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "Steering"
 		    Location		    [170, 228, 887, 1055]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10279,6 +10184,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -10322,8 +10228,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Steer IF (in)"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10339,128 +10243,86 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Steering IF Ang"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Steering IF AngVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Steering IF AngAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Steering IF Trq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Steering IF TrqStatic"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Steering IF AssistFrc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Steering IF AssistTrqCol"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Steering IF AssistTrqPin"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Steering IF L q"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Steering IF L qp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Steering IF L qpp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Steering IF L iSteer2q"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Steering IF R q"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Steering IF R qp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    15
 		    Name		    "Steering IF R qpp"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    16
 		    Name		    "Steering IF R iSteer2q"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    17
 		    Name		    "Steering IF SteerByTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    18
 		    Name		    "Steering IF L Frc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    19
 		    Name		    "Steering IF L Inert"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    20
 		    Name		    "Steering IF R Frc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    21
 		    Name		    "Steering IF R Inert"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10475,6 +10337,7 @@ Model {
 		    Parameters		    "'Steering'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    Terminator
@@ -10736,12 +10599,10 @@ Model {
 		    }
 		    Annotation {
 		    SID			    "2119"
-		    Name		    "When replacing the entire steering system,\nbe sure to disable the IPG steering model by using the "
-		    "steering\nmodel 'Model Manager off' in the vehicle GUI."
+		    Name		    "When replacing the entire steering system,\nbe sure to disable the IPG steering model by using the st"
+		    "eering\nmodel 'Model Manager off' in the vehicle GUI."
 		    Position		    [54, 489, 334, 527]
 		    InternalMargins	    [0, 0, 0, 0]
-		    FixedHeight		    off
-		    FixedWidth		    off
 		    ZOrder		    -1
 		    }
 		  }
@@ -10771,11 +10632,13 @@ Model {
 		  ZOrder		  -13
 		  BackgroundColor	  "green"
 		  RequestExecContextInheritance	off
-		  Variant		  off
 		  System {
 		    Name		    "Trailer"
 		    Location		    [173, 152, 846, 1094]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10787,6 +10650,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Sync_In"
@@ -10848,19 +10712,17 @@ Model {
 		    Position		    [245, 579, 385, 621]
 		    ZOrder		    -7
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car.Hitch.FrcTrq"
-		    PropagatedSignals	    "Car Hitch Frc2Car x, Car Hitch Frc2Car y, Car Hitch Frc2Car z, Car Hitch Trq2Car x, Car H"
-		    "itch Trq2Car y, Car Hitch Trq2Car z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Car.Hitch.FrcTrq"
 		    Location		    [388, 496, 799, 945]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10872,6 +10734,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -10905,38 +10768,26 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Car Hitch Frc2Car x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Car Hitch Frc2Car y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Car Hitch Frc2Car z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Car Hitch Trq2Car x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Car Hitch Trq2Car y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Car Hitch Trq2Car z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -11025,20 +10876,17 @@ Model {
 		    Position		    [245, 189, 385, 231]
 		    ZOrder		    -8
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Motion"
-		    PropagatedSignals	    "Vhcl v, Vhcl Distance, Vhcl sRoad, Vhcl Hitch_Pos x, Vhcl Hitch_Pos y, Vhcl Hitch_Pos z, "
-		    "Vhcl Roll, Vhcl RollVel, Vhcl RollAcc, Vhcl Pitch, Vhcl PitchVel, Vhcl PitchAcc, Vhcl Yaw, Vhcl YawVel, Vhcl Yaw"
-		    "Acc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Motion"
 		    Location		    [402, 388, 805, 978]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11050,6 +10898,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -11082,92 +10931,62 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl v"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Distance"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl sRoad"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Hitch_Pos x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Hitch_Pos y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Hitch_Pos z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Roll"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl RollVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl RollAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Pitch"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl PitchVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl PitchAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Yaw"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl YawVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    15
 		    Name		    "Vhcl YawAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -11337,20 +11156,17 @@ Model {
 		    Position		    [245, 254, 385, 296]
 		    ZOrder		    -9
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.PoI"
-		    PropagatedSignals	    "Vhcl PoI_Pos x, Vhcl PoI_Pos y, Vhcl PoI_Pos z, Vhcl PoI_Vel x, Vhcl PoI_Vel y, Vhcl PoI_"
-		    "Vel z, Vhcl PoI_Acc x, Vhcl PoI_Acc y, Vhcl PoI_Acc z, Vhcl PoI_Vel_1 x, Vhcl PoI_Vel_1 y, Vhcl PoI_Vel_1 z, Vhc"
-		    "l PoI_Acc_1 x, Vhcl PoI_Acc_1 y, Vhcl PoI_Acc_1 z, Vhcl PoI_GCS Long, Vhcl PoI_GCS Lat, Vhcl PoI_GCS Elev"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.PoI"
 		    Location		    [394, 392, 793, 1012]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11362,6 +11178,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -11395,110 +11212,74 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl PoI_Pos x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl PoI_Pos y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl PoI_Pos z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl PoI_Vel x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl PoI_Vel y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl PoI_Vel z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl PoI_Acc x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl PoI_Acc y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl PoI_Acc z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl PoI_Vel_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl PoI_Vel_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl PoI_Vel_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl PoI_Acc_1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl PoI_Acc_1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    15
 		    Name		    "Vhcl PoI_Acc_1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    16
 		    Name		    "Vhcl PoI_GCS Long"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    17
 		    Name		    "Vhcl PoI_GCS Lat"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    18
 		    Name		    "Vhcl PoI_GCS Elev"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -11697,18 +11478,17 @@ Model {
 		    Position		    [245, 124, 385, 166]
 		    ZOrder		    -10
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Steering"
-		    PropagatedSignals	    "Vhcl Steering Ang, Vhcl Steering AngVel, Vhcl Steering AngAcc, Vhcl Steering Trq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Steering"
 		    Location		    [389, 340, 786, 780]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11720,6 +11500,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -11752,26 +11533,18 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Steering Ang"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Steering AngVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Steering AngAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Steering Trq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -11843,20 +11616,17 @@ Model {
 		    Position		    [245, 319, 385, 361]
 		    ZOrder		    -11
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Wheel.FL"
-		    PropagatedSignals	    "Vhcl Wheel FL t x, Vhcl Wheel FL t y, Vhcl Wheel FL t z, Vhcl Wheel FL r_zxy x, Vhcl Whee"
-		    "l FL r_zxy y, Vhcl Wheel FL r_zxy z, Vhcl Wheel FL Fx, Vhcl Wheel FL Fy, Vhcl Wheel FL Fz, Vhcl Wheel FL vBelt, "
-		    "Vhcl Wheel FL LongSlip, Vhcl Wheel FL SideSlip, Vhcl Wheel FL Trq_T2W, Vhcl Wheel FL Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Wheel.FL"
 		    Location		    [391, 521, 844, 1094]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11868,6 +11638,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -11901,86 +11672,58 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel FL t x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel FL t y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel FL t z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel FL r_zxy x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel FL r_zxy y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel FL r_zxy z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel FL Fx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel FL Fy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel FL Fz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel FL vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel FL LongSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel FL SideSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Wheel FL Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl Wheel FL Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -12143,20 +11886,17 @@ Model {
 		    Position		    [245, 382, 385, 428]
 		    ZOrder		    -12
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Wheel.FR"
-		    PropagatedSignals	    "Vhcl Wheel FR t x, Vhcl Wheel FR t y, Vhcl Wheel FR t z, Vhcl Wheel FR r_zxy x, Vhcl Whee"
-		    "l FR r_zxy y, Vhcl Wheel FR r_zxy z, Vhcl Wheel FR Fx, Vhcl Wheel FR Fy, Vhcl Wheel FR Fz, Vhcl Wheel FR vBelt, "
-		    "Vhcl Wheel FR LongSlip, Vhcl Wheel FR SideSlip, Vhcl Wheel FR Trq_T2W, Vhcl Wheel FR Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Wheel.FR"
 		    Location		    [428, 563, 838, 1093]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12168,6 +11908,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -12201,86 +11942,58 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel FR t x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel FR t y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel FR t z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel FR r_zxy x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel FR r_zxy y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel FR r_zxy z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel FR Fx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel FR Fy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel FR Fz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel FR vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel FR LongSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel FR SideSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Wheel FR Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl Wheel FR Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -12441,20 +12154,17 @@ Model {
 		    Position		    [245, 448, 385, 492]
 		    ZOrder		    -13
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Wheel.RL"
-		    PropagatedSignals	    "Vhcl Wheel RL t x, Vhcl Wheel RL t y, Vhcl Wheel RL t z, Vhcl Wheel RL r_zxy x, Vhcl Whee"
-		    "l RL r_zxy y, Vhcl Wheel RL r_zxy z, Vhcl Wheel RL Fx, Vhcl Wheel RL Fy, Vhcl Wheel RL Fz, Vhcl Wheel RL vBelt, "
-		    "Vhcl Wheel RL LongSlip, Vhcl Wheel RL SideSlip, Vhcl Wheel RL Trq_T2W, Vhcl Wheel RL Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Wheel.RL"
 		    Location		    [383, 297, 801, 827]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12466,6 +12176,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -12499,86 +12210,58 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel RL t x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel RL t y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel RL t z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel RL r_zxy x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel RL r_zxy y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel RL r_zxy z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel RL Fx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel RL Fy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel RL Fz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel RL vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel RL LongSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel RL SideSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Wheel RL Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl Wheel RL Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -12739,20 +12422,17 @@ Model {
 		    Position		    [245, 514, 385, 556]
 		    ZOrder		    -14
 		    RequestExecContextInheritance off
-		    Variant		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl.Wheel.RR"
-		    PropagatedSignals	    "Vhcl Wheel RR t x, Vhcl Wheel RR t y, Vhcl Wheel RR t z, Vhcl Wheel RR r_zxy x, Vhcl Whee"
-		    "l RR r_zxy y, Vhcl Wheel RR r_zxy z, Vhcl Wheel RR Fx, Vhcl Wheel RR Fy, Vhcl Wheel RR Fz, Vhcl Wheel RR vBelt, "
-		    "Vhcl Wheel RR LongSlip, Vhcl Wheel RR SideSlip, Vhcl Wheel RR Trq_T2W, Vhcl Wheel RR Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    System {
 		    Name		    "CreateBus Vhcl.Wheel.RR"
 		    Location		    [362, 317, 776, 847]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12764,6 +12444,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "In1"
@@ -12797,86 +12478,58 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel RR t x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel RR t y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel RR t z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel RR r_zxy x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel RR r_zxy y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel RR r_zxy z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel RR Fx"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel RR Fy"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel RR Fz"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel RR vBelt"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel RR LongSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel RR SideSlip"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    13
 		    Name		    "Vhcl Wheel RR Trq_T2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    14
 		    Name		    "Vhcl Wheel RR Trq_WhlBearing"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -13041,6 +12694,7 @@ Model {
 		    Parameters		    "'Trailer'"
 		    SFunctionDeploymentMode off
 		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -13651,11 +13305,13 @@ Model {
 	      ZOrder		      -10
 	      BackgroundColor	      "green"
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"PowerTrain"
 		Location		[180, 180, 1097, 994]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -13667,6 +13323,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Sync_In"
@@ -13717,254 +13374,170 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "PT IF Ignition"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "PT IF OperationState"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "PT IF OperationError"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "PT IF GearNo"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "PT IF Engine_rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "PT IF Trq_Supp2Bdy1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "PT IF Trq_Supp2Bdy1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "PT IF Trq_Supp2Bdy1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "PT IF Trq_Supp2Bdy1B x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "PT IF Trq_Supp2Bdy1B y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "PT IF Trq_Supp2Bdy1B z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    12
 		    Name		    "PT IF Trq_Supp2BdyEng x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    13
 		    Name		    "PT IF Trq_Supp2BdyEng y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    14
 		    Name		    "PT IF DL_iDiff_mean"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    15
 		    Name		    "PT IF WFL rot"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    16
 		    Name		    "PT IF WFL rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    17
 		    Name		    "PT IF WFL Trq_B2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    18
 		    Name		    "PT IF WFL Trq_Drive"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    19
 		    Name		    "PT IF WFL Trq_Supp2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    20
 		    Name		    "PT IF WFL Trq_BrakeReg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    21
 		    Name		    "PT IF WFL Trq_BrakeReg_max"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    22
 		    Name		    "PT IF WFR rot"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    23
 		    Name		    "PT IF WFR rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    24
 		    Name		    "PT IF WFR Trq_B2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    25
 		    Name		    "PT IF WFR Trq_Drive"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    26
 		    Name		    "PT IF WFR Trq_Supp2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    27
 		    Name		    "PT IF WFR Trq_BrakeReg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    28
 		    Name		    "PT IF WFR Trq_BrakeReg_max"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    29
 		    Name		    "PT IF WRL rot"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    30
 		    Name		    "PT IF WRL rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    31
 		    Name		    "PT IF WRL Trq_B2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    32
 		    Name		    "PT IF WRL Trq_Drive"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    33
 		    Name		    "PT IF WRL Trq_Supp2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    34
 		    Name		    "PT IF WRL Trq_BrakeReg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    35
 		    Name		    "PT IF WRL Trq_BrakeReg_max"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    36
 		    Name		    "PT IF WRR rot"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    37
 		    Name		    "PT IF WRR rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    38
 		    Name		    "PT IF WRR Trq_B2W"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    39
 		    Name		    "PT IF WRR Trq_Drive"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    40
 		    Name		    "PT IF WRR Trq_Supp2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    41
 		    Name		    "PT IF WRR Trq_BrakeReg"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    42
 		    Name		    "PT IF WRR Trq_BrakeReg_max"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -13979,11 +13552,10 @@ Model {
 		  Parameters		  "'PowerTrain'"
 		  SFunctionDeploymentMode off
 		  EnableBusSupport	  off
+		  SFcnIsStateOwnerBlock	  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "Sync"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -13998,6 +13570,7 @@ Model {
 		  Parameters		  "'PowerTrainUpd'"
 		  SFunctionDeploymentMode off
 		  EnableBusSupport	  off
+		  SFcnIsStateOwnerBlock	  off
 		}
 		Block {
 		  BlockType		  Outport
@@ -14441,12 +14014,10 @@ Model {
 		}
 		Annotation {
 		  SID			  "2191"
-		  Name			  "When replacing the entire powertrain,\nbe sure to disable the IPG powertrain model by using the "
-		  "powertrain\nmodel 'Model Manager off' in the vehicle GUI."
+		  Name			  "When replacing the entire powertrain,\nbe sure to disable the IPG powertrain model by using the powertra"
+		  "in\nmodel 'Model Manager off' in the vehicle GUI."
 		  Position		  [23, 424, 325, 462]
 		  InternalMargins	  [0, 0, 0, 0]
-		  FixedHeight		  off
-		  FixedWidth		  off
 		  ZOrder		  -1
 		}
 		Annotation {
@@ -14454,8 +14025,6 @@ Model {
 		  Name			  "<Your model here>"
 		  Position		  [533, 182, 619, 196]
 		  InternalMargins	  [0, 0, 0, 0]
-		  FixedHeight		  off
-		  FixedWidth		  off
 		  ZOrder		  -2
 		}
 	      }
@@ -14474,9 +14043,12 @@ Model {
 	      Ports		      [1, 1]
 	      Position		      [200, 55, 230, 85]
 	      ZOrder		      -12
-	      LibraryVersion	      "1.260"
+	      LibraryVersion	      "1.453"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 	      SourceType	      "Compare To Constant"
+	      SourceProductName	      "Simulink"
+	      SourceProductBaseCode   "SL"
+	      ContentPreviewEnabled   off
 	      relop		      "~="
 	      const		      "1"
 	      OutDataTypeStr	      "boolean"
@@ -14590,6 +14162,1105 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  SubSystem
+	  Name			  "Sensor"
+	  SID			  "2238"
+	  Ports			  [0, 3]
+	  Position		  [130, 195, 345, 355]
+	  ZOrder		  1
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "gray"
+	  HideAutomaticName	  off
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Sensor"
+	    Location		    [-7, -7, 1543, 831]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator"
+	      SID		      "2271"
+	      Ports		      [5, 1]
+	      Position		      [1140, 237, 1145, 343]
+	      ZOrder		      352
+	      ShowName		      off
+	      Inputs		      "5"
+	      DisplayOption	      "bar"
+	      InheritFromInputs	      on
+	    }
+	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator1"
+	      SID		      "2273"
+	      Ports		      [3, 1]
+	      Position		      [990, 443, 995, 547]
+	      ZOrder		      354
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	      InheritFromInputs	      on
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector"
+	      SID		      "2270"
+	      Ports		      [1, 3]
+	      Position		      [790, 246, 795, 324]
+	      ZOrder		      351
+	      ShowName		      off
+	      OutputSignals	      "Object_dy,ObjectType,Object_ID"
+	      OutputAsBus	      off
+	      Port {
+		PortNumber		1
+		Name			"<Object_dy>"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<ObjectType>"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"<Object_ID>"
+	      }
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector1"
+	      SID		      "2272"
+	      Ports		      [1, 3]
+	      Position		      [875, 441, 885, 549]
+	      ZOrder		      353
+	      ShowName		      off
+	      OutputSignals	      "Object_dx,Object_ID,Vel_x"
+	      OutputAsBus	      off
+	      Port {
+		PortNumber		1
+		Name			"<Object_dx>"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<Object_ID>"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"<Vel_x>"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "For Iterator\nSubsystem"
+	      SID		      "2244"
+	      Ports		      [2, 1]
+	      Position		      [510, 246, 685, 364]
+	      ZOrder		      347
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"For Iterator\nSubsystem"
+		Location		[-7, -7, 1543, 831]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  Inport
+		  Name			  "SensorIndex"
+		  SID			  "2245"
+		  Position		  [90, 3, 120, 17]
+		  ZOrder		  315
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "NumObj"
+		  SID			  "2246"
+		  Position		  [90, 78, 120, 92]
+		  ZOrder		  316
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  BusCreator
+		  Name			  "Bus\nCreator"
+		  SID			  "2247"
+		  Ports			  [5, 1]
+		  Position		  [1010, -136, 1015, 196]
+		  ZOrder		  336
+		  ShowName		  off
+		  Inputs		  "5"
+		  DisplayOption		  "bar"
+		  InheritFromInputs	  on
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector3"
+		  SID			  "2248"
+		  Ports			  [1, 1]
+		  Position		  [685, 79, 690, 151]
+		  ZOrder		  331
+		  ShowName		  off
+		  OutputSignals		  "v_0 x"
+		  OutputAsBus		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "<v_0 x>"
+		  }
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector4"
+		  SID			  "2249"
+		  Ports			  [1, 1]
+		  Position		  [685, -135, 690, -75]
+		  ZOrder		  332
+		  ShowName		  off
+		  OutputSignals		  "width"
+		  OutputAsBus		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "<width>"
+		  }
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector6"
+		  SID			  "2251"
+		  Ports			  [1, 2]
+		  Position		  [685, -47, 690, 17]
+		  ZOrder		  334
+		  ShowName		  off
+		  OutputSignals		  "RefPnt ds x,RefPnt ds y"
+		  OutputAsBus		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "<RefPnt ds x>"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "<RefPnt ds y>"
+		  }
+		}
+		Block {
+		  BlockType		  ForIterator
+		  Name			  "For Iterator"
+		  SID			  "2252"
+		  Ports			  [1, 1]
+		  Position		  [150, 65, 275, 105]
+		  ZOrder		  314
+		  ResetStates		  "reset"
+		  IterationSource	  "external"
+		  IndexMode		  "Zero-based"
+		  Port {
+		    PortNumber		    1
+		    Name		    "object_index"
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "MATLAB Function"
+		  SID			  "2253"
+		  Ports			  [5, 5]
+		  Position		  [820, -136, 940, 236]
+		  ZOrder		  335
+		  ErrorFcn		  "Stateflow.Translate.translate"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  RequestExecContextInheritance	off
+		  SFBlockType		  "MATLAB Function"
+		  ContentPreviewEnabled	  on
+		  Port {
+		    PortNumber		    1
+		    Name		    "Object_dx"
+		    PropagatedSignals	    "Object_dx"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "Object_dy"
+		    PropagatedSignals	    "Object_dy"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "Vel_x"
+		    PropagatedSignals	    "Vel_x"
+		  }
+		  Port {
+		    PortNumber		    4
+		    Name		    "ObjectType"
+		    PropagatedSignals	    "ObjectType"
+		  }
+		  Port {
+		    PortNumber		    5
+		    Name		    "Object_ID"
+		    PropagatedSignals	    "Object_ID"
+		  }
+		  System {
+		    Name		    "MATLAB Function"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "56"
+		    SimulinkSubDomain	    "Simulink"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "width"
+		    SID			    "2253::23"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    14
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "RefPt_dx"
+		    SID			    "2253::25"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    16
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "RefPt_dy"
+		    SID			    "2253::26"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    17
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "v_x"
+		    SID			    "2253::28"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    19
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Obj_idx"
+		    SID			    "2253::37"
+		    Position		    [20, 246, 40, 264]
+		    ZOrder		    28
+		    Port		    "5"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "2253::20"
+		    Ports		    [1, 1]
+		    Position		    [270, 315, 320, 355]
+		    ZOrder		    11
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "2253::19"
+		    Tag			    "Stateflow S-Function 2"
+		    Ports		    [5, 6]
+		    Position		    [180, 117, 230, 258]
+		    ZOrder		    10
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[5 6]"
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    on
+		    SFcnIsStateOwnerBlock   off
+		    Port {
+		    PortNumber		    2
+		    Name		    "Object_dx"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "Object_dy"
+		    }
+		    Port {
+		    PortNumber		    4
+		    Name		    "Vel_x"
+		    }
+		    Port {
+		    PortNumber		    5
+		    Name		    "ObjectType"
+		    }
+		    Port {
+		    PortNumber		    6
+		    Name		    "Object_ID"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "2253::21"
+		    Position		    [460, 326, 480, 344]
+		    ZOrder		    12
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Object_dx"
+		    SID			    "2253::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Object_dy"
+		    SID			    "2253::38"
+		    Position		    [460, 136, 480, 154]
+		    ZOrder		    29
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Vel_x"
+		    SID			    "2253::43"
+		    Position		    [460, 171, 480, 189]
+		    ZOrder		    34
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "ObjectType"
+		    SID			    "2253::55"
+		    Position		    [460, 206, 480, 224]
+		    ZOrder		    46
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Object_ID"
+		    SID			    "2253::56"
+		    Position		    [460, 246, 480, 264]
+		    ZOrder		    47
+		    Port		    "5"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1372
+		    SrcBlock		    "width"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    1373
+		    SrcBlock		    "RefPt_dx"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    1374
+		    SrcBlock		    "RefPt_dy"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    1375
+		    SrcBlock		    "v_x"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    1376
+		    SrcBlock		    "Obj_idx"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    5
+		    }
+		    Line {
+		    Name		    "Object_dx"
+		    ZOrder		    1377
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "Object_dx"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "Object_dy"
+		    ZOrder		    1378
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    3
+		    DstBlock		    "Object_dy"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "Vel_x"
+		    ZOrder		    1379
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    4
+		    DstBlock		    "Vel_x"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "ObjectType"
+		    ZOrder		    1380
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    5
+		    DstBlock		    "ObjectType"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "Object_ID"
+		    ZOrder		    1381
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    6
+		    DstBlock		    "Object_ID"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    1382
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    1383
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Object Sensor Object"
+		  SID			  "2254"
+		  Ports			  [2, 6]
+		  Position		  [320, -28, 455, 123]
+		  ZOrder		  317
+		  BackgroundColor	  "orange"
+		  LibraryVersion	  "1.495"
+		  SourceBlock		  "CarMaker4SL/Sensors/Object Sensor Object"
+		  SourceType		  "Object Sensor Object"
+		  SourceProductName	  "CarMaker4SL"
+		  ContentPreviewEnabled	  on
+		  xname			  "INPORT"
+		  ximode		  "Observed Objects"
+		  xstime		  "Inherited"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator2"
+		  SID			  "2255"
+		  Position		  [480, 75, 500, 95]
+		  ZOrder		  329
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator3"
+		  SID			  "2256"
+		  Position		  [480, 100, 500, 120]
+		  ZOrder		  330
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Traffic Object"
+		  SID			  "2257"
+		  Ports			  [1, 2]
+		  Position		  [520, 30, 650, 90]
+		  ZOrder		  340
+		  BackgroundColor	  "orange"
+		  LibraryVersion	  "1.495"
+		  SourceBlock		  "CarMaker4SL/Traffic Object"
+		  SourceType		  "CarMaker Traffic Object"
+		  SourceProductName	  "CarMaker4SL"
+		  ContentPreviewEnabled	  on
+		  xname			  "INPORT"
+		  ximode		  "Object Id"
+		  xstime		  "Inherited"
+		  Port {
+		    PortNumber		    1
+		    Name		    "TrafficObjectIndex"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Objects"
+		  SID			  "2258"
+		  Position		  [1045, 18, 1075, 32]
+		  ZOrder		  337
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "NumObj"
+		  SrcPort		  1
+		  DstBlock		  "For Iterator"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "Object Sensor Object"
+		  SrcPort		  1
+		  Points		  [24, 0; 0, 75]
+		  DstBlock		  "Traffic Object"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  "Traffic Object"
+		  SrcPort		  2
+		  Points		  [13, 0; 0, 40]
+		  DstBlock		  "Bus\nSelector3"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  9
+		  SrcBlock		  "Object Sensor Object"
+		  SrcPort		  6
+		  DstBlock		  "Terminator3"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  11
+		  SrcBlock		  "Bus\nCreator"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  DstBlock		  "Objects"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RefPnt ds y>"
+		  ZOrder		  14
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector6"
+		  SrcPort		  2
+		  Points		  [37, 0; 0, 50]
+		  DstBlock		  "MATLAB Function"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "<width>"
+		  ZOrder		  20
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector4"
+		  SrcPort		  1
+		  Points		  [73, 0; 0, 5]
+		  DstBlock		  "MATLAB Function"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  21
+		  SrcBlock		  "Object Sensor Object"
+		  SrcPort		  5
+		  DstBlock		  "Terminator2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RefPnt ds x>"
+		  ZOrder		  27
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector6"
+		  SrcPort		  1
+		  Points		  [73, 0; 0, 5]
+		  DstBlock		  "MATLAB Function"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  33
+		  SrcBlock		  "Object Sensor Object"
+		  SrcPort		  4
+		  Points		  [10, 0; 0, -41; 196, 0; 0, -34]
+		  DstBlock		  "Bus\nSelector6"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<v_0 x>"
+		  ZOrder		  36
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector3"
+		  SrcPort		  1
+		  Points		  [37, 0; 0, 10]
+		  DstBlock		  "MATLAB Function"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  40
+		  SrcBlock		  "Object Sensor Object"
+		  SrcPort		  2
+		  Points		  [41, 0; 0, -115]
+		  DstBlock		  "Bus\nSelector4"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "object_index"
+		  ZOrder		  42
+		  SrcBlock		  "For Iterator"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    ZOrder		    43
+		    Labels		    [-1, 0; 1, 1]
+		    Points		    [0, 115]
+		    DstBlock		    "MATLAB Function"
+		    DstPort		    5
+		  }
+		  Branch {
+		    ZOrder		    44
+		    DstBlock		    "Object Sensor Object"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  45
+		  SrcBlock		  "SensorIndex"
+		  SrcPort		  1
+		  DstBlock		  "Object Sensor Object"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Object_dx"
+		  ZOrder		  50
+		  Labels		  [0, 0]
+		  SrcBlock		  "MATLAB Function"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Object_dy"
+		  ZOrder		  51
+		  Labels		  [0, 0]
+		  SrcBlock		  "MATLAB Function"
+		  SrcPort		  2
+		  Points		  [17, 0; 0, -10]
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Vel_x"
+		  ZOrder		  52
+		  Labels		  [0, 0]
+		  SrcBlock		  "MATLAB Function"
+		  SrcPort		  3
+		  Points		  [25, 0; 0, -20]
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "ObjectType"
+		  ZOrder		  53
+		  Labels		  [0, 0]
+		  SrcBlock		  "MATLAB Function"
+		  SrcPort		  4
+		  Points		  [33, 0; 0, -30]
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  4
+		}
+		Line {
+		  Name			  "Object_ID"
+		  ZOrder		  54
+		  Labels		  [1, 1]
+		  SrcBlock		  "MATLAB Function"
+		  SrcPort		  5
+		  Points		  [42, 0; 0, -40]
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  5
+		}
+		Annotation {
+		  SID			  "2261"
+		  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<htm"
+		  "l><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</st"
+		  "yle></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:norm"
+		  "al;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block"
+		  "-indent:0; text-indent:0px;\"><span style=\" font-size:10px; color:#ff0000;\">Position</span></p></body></html>"
+		  Position		  [625, -28, 662, -14]
+		  InternalMargins	  [0, 0, 0, 0]
+		  HorizontalAlignment	  "left"
+		  VerticalAlignment	  "top"
+		  Interpreter		  "rich"
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "2260"
+		  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<htm"
+		  "l><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</st"
+		  "yle></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:norm"
+		  "al;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block"
+		  "-indent:0; text-indent:0px;\"><span style=\" color:#c00000;\">Velocity</span></p>\n<p align=\"left\" style=\" marg"
+		  "in-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span sty"
+		  "le=\" color:#c00000;\">Acceleration</span></p>\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; marg"
+		  "in-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#c00000;\">AngularDispl"
+		  "acement</span></p></body></html>"
+		  Position		  [537, 102, 633, 140]
+		  InternalMargins	  [0, 0, 0, 0]
+		  HorizontalAlignment	  "left"
+		  VerticalAlignment	  "top"
+		  Interpreter		  "rich"
+		  ZOrder		  -2
+		}
+		Annotation {
+		  SID			  "2259"
+		  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<htm"
+		  "l><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</st"
+		  "yle></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:norm"
+		  "al;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block"
+		  "-indent:0; text-indent:0px;\"><span style=\" color:#ff0000;\">Dimension</span></p></body></html>"
+		  Position		  [619, -88, 668, -74]
+		  InternalMargins	  [0, 0, 0, 0]
+		  HorizontalAlignment	  "left"
+		  VerticalAlignment	  "top"
+		  Interpreter		  "rich"
+		  ZOrder		  -3
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground"
+	      SID		      "2262"
+	      Position		      [160, 320, 180, 340]
+	      ZOrder		      343
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Object Sensor"
+	      SID		      "2263"
+	      Ports		      [1, 4]
+	      Position		      [205, 252, 340, 403]
+	      ZOrder		      342
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Sensors/Object Sensor"
+	      SourceType	      "Object Sensor"
+	      SourceProductName	      "CarMaker4SL"
+	      ContentPreviewEnabled   on
+	      xname		      "ObjectFront"
+	      xstime		      "Continuous"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Read CM Dict"
+	      SID		      "2277"
+	      Ports		      [0, 1]
+	      Position		      [800, 335, 1025, 355]
+	      ZOrder		      358
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Read CM Dict"
+	      SourceType	      "Read CarMaker Dictionary Variable(s)"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "Sensor.TSign.TS00.SpeedLimit.0.ds"
+	      xsync		      off
+	      xstime		      "Continuous"
+	      Port {
+		PortNumber		1
+		Name			"SL_Distance"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Read CM Dict1"
+	      SID		      "2278"
+	      Ports		      [0, 1]
+	      Position		      [770, 357, 1025, 383]
+	      ZOrder		      359
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Read CM Dict"
+	      SourceType	      "Read CarMaker Dictionary Variable(s)"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "Sensor.TSign.TS00.SpeedLimit.0.Main.val0"
+	      xsync		      off
+	      xstime		      "Continuous"
+	      Port {
+		PortNumber		1
+		Name			"SL_Speed"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Read CM Dict2"
+	      SID		      "2280"
+	      Ports		      [0, 1]
+	      Position		      [655, 602, 910, 628]
+	      ZOrder		      361
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Read CM Dict"
+	      SourceType	      "Read CarMaker Dictionary Variable(s)"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "Car.v"
+	      xsync		      off
+	      xstime		      "Continuous"
+	      Port {
+		PortNumber		1
+		Name			"SL_Speed"
+	      }
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation"
+	      SID		      "2264"
+	      Ports		      [1, 1]
+	      Position		      [440, 320, 470, 350]
+	      ZOrder		      346
+	      InputPortMap	      "u0"
+	      UpperLimit	      "5"
+	      LowerLimit	      "0"
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      SID		      "2265"
+	      Position		      [385, 370, 405, 390]
+	      ZOrder		      344
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator1"
+	      SID		      "2266"
+	      Position		      [385, 300, 405, 320]
+	      ZOrder		      345
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Video_Interface"
+	      SID		      "2241"
+	      Position		      [1230, 283, 1260, 297]
+	      ZOrder		      179
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Radar_Interface"
+	      SID		      "2242"
+	      Position		      [1115, 488, 1145, 502]
+	      ZOrder		      180
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Ego_Velocity "
+	      SID		      "2279"
+	      Position		      [1145, 608, 1175, 622]
+	      ZOrder		      360
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Ground"
+	      SrcPort		      1
+	      DstBlock		      "Object Sensor"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Object Sensor"
+	      SrcPort		      4
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Object Sensor"
+	      SrcPort		      2
+	      DstBlock		      "Terminator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Object Sensor"
+	      SrcPort		      3
+	      Points		      [45, 0; 0, -10]
+	      DstBlock		      "Saturation"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Saturation"
+	      SrcPort		      1
+	      DstBlock		      "For Iterator\nSubsystem"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Object Sensor"
+	      SrcPort		      1
+	      DstBlock		      "For Iterator\nSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "For Iterator\nSubsystem"
+	      SrcPort		      1
+	      Points		      [42, 0]
+	      Branch {
+		ZOrder			35
+		Points			[0, 190]
+		DstBlock		"Bus\nSelector1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			34
+		Points			[6, 0; 0, -20]
+		DstBlock		"Bus\nSelector"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Name		      "<Object_dy>"
+	      ZOrder		      31
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -10]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<ObjectType>"
+	      ZOrder		      32
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      2
+	      Points		      [50, 0; 0, -15]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<Object_ID>"
+	      ZOrder		      33
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      3
+	      Points		      [75, 0; 0, -20]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<Object_dx>"
+	      ZOrder		      36
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<Object_ID>"
+	      ZOrder		      37
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      2
+	      DstBlock		      "Bus\nCreator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<Vel_x>"
+	      ZOrder		      38
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      3
+	      DstBlock		      "Bus\nCreator1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      39
+	      SrcBlock		      "Bus\nCreator1"
+	      SrcPort		      1
+	      DstBlock		      "Radar_Interface"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      40
+	      SrcBlock		      "Bus\nCreator"
+	      SrcPort		      1
+	      DstBlock		      "Video_Interface"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "SL_Distance"
+	      ZOrder		      45
+	      Labels		      [1, 1]
+	      SrcBlock		      "Read CM Dict"
+	      SrcPort		      1
+	      Points		      [40, 0; 0, -35]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      4
+	    }
+	    Line {
+	      Name		      "SL_Speed"
+	      ZOrder		      46
+	      Labels		      [1, 1]
+	      SrcBlock		      "Read CM Dict1"
+	      SrcPort		      1
+	      Points		      [84, 0; 0, -40]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      5
+	    }
+	    Line {
+	      Name		      "SL_Speed"
+	      ZOrder		      47
+	      Labels		      [0, 0]
+	      SrcBlock		      "Read CM Dict2"
+	      SrcPort		      1
+	      DstBlock		      "Ego_Velocity "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
 	  SID			  "2195"
@@ -14606,11 +15277,13 @@ Model {
 	  ZOrder		  -7
 	  BackgroundColor	  "green"
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  System {
 	    Name		    "VehicleControl"
 	    Location		    [251, 201, 1244, 1072]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -14622,6 +15295,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sync_In"
@@ -14659,11 +15333,13 @@ Model {
 	      Position		      [650, 294, 790, 336]
 	      ZOrder		      -4
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CreateBus Vhcl.Misc"
 		Location		[70, 498, 515, 1080]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -14675,6 +15351,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
@@ -14707,68 +15384,46 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Trq_DL2Bdy1 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Trq_DL2Bdy1 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Trq_DL2Bdy1 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Trq_DL2Bdy1B x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Trq_DL2Bdy1B y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Trq_DL2Bdy1B z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Trq_DL2BdyEng x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Trq_DL2BdyEng y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wind_vel_0 x"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wind_vel_0 y"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wind_vel_0 z"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -14902,11 +15557,13 @@ Model {
 	      Position		      [650, 229, 790, 271]
 	      ZOrder		      -5
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CreateBus Vhcl.Wheel.In"
 		Location		[263, 497, 741, 1157]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -14918,6 +15575,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
@@ -14951,74 +15609,50 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Vhcl Wheel FL Trq_B2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "Vhcl Wheel FL Trq_DL2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Vhcl Wheel FL rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Vhcl Wheel FR Trq_B2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "Vhcl Wheel FR Trq_DL2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "Vhcl Wheel FR rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "Vhcl Wheel RL Trq_B2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "Vhcl Wheel RL Trq_DL2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "Vhcl Wheel RL rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "Vhcl Wheel RR Trq_B2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "Vhcl Wheel RR Trq_DL2WC"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    12
 		    Name		    "Vhcl Wheel RR rotv"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -15161,11 +15795,13 @@ Model {
 	      Position		      [225, 342, 380, 388]
 	      ZOrder		      -6
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CreateBus VhclCtrl"
 		Location		[233, 226, 730, 970]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -15177,6 +15813,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
@@ -15209,176 +15846,118 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "VhclCtrl SST"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "VhclCtrl Key"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "VhclCtrl UserSignal0"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "VhclCtrl UserSignal1"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "VhclCtrl UserSignal2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "VhclCtrl UserSignal3"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "VhclCtrl UserSignal4"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "VhclCtrl GearNo"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "VhclCtrl SelectorCtrl"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "VhclCtrl Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "VhclCtrl BrakePark"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    12
 		    Name		    "VhclCtrl Clutch"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    13
 		    Name		    "VhclCtrl Gas"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    14
 		    Name		    "VhclCtrl Steering Ang"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    15
 		    Name		    "VhclCtrl Steering AngVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    16
 		    Name		    "VhclCtrl Steering AngAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    17
 		    Name		    "VhclCtrl Steering Trq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    18
 		    Name		    "VhclCtrl Lights LowBeam"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    19
 		    Name		    "VhclCtrl Lights HighBeam"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    20
 		    Name		    "VhclCtrl Lights Daytime"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    21
 		    Name		    "VhclCtrl Lights ParkL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    22
 		    Name		    "VhclCtrl Lights ParkR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    23
 		    Name		    "VhclCtrl Lights IndL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    24
 		    Name		    "VhclCtrl Lights IndR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    25
 		    Name		    "VhclCtrl Lights FogFrontL"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    26
 		    Name		    "VhclCtrl Lights FogFrontR"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    27
 		    Name		    "VhclCtrl Lights FogRear"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    28
 		    Name		    "VhclCtrl Lights Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    29
 		    Name		    "VhclCtrl Lights Reverse"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -15674,11 +16253,13 @@ Model {
 	      Position		      [650, 426, 790, 464]
 	      ZOrder		      -7
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CreateBus VhclCtrl.PT"
 		Location		[51, 505, 679, 984]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -15690,6 +16271,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
@@ -15722,74 +16304,50 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "VhclCtrl SST"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "VhclCtrl Key"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "VhclCtrl UserSignal0"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "VhclCtrl UserSignal1"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "VhclCtrl UserSignal2"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "VhclCtrl UserSignal3"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "VhclCtrl UserSignal4"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "VhclCtrl GearNo"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    9
 		    Name		    "VhclCtrl SelectorCtrl"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    10
 		    Name		    "VhclCtrl Clutch"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    11
 		    Name		    "VhclCtrl Gas"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    12
 		    Name		    "VhclCtrl Brake"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -15932,11 +16490,13 @@ Model {
 	      Position		      [650, 165, 790, 205]
 	      ZOrder		      -8
 	      RequestExecContextInheritance off
-	      Variant		      off
 	      System {
 		Name			"CreateBus VhclCtrl.Steering"
 		Location		[410, 331, 863, 825]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -15948,6 +16508,7 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
@@ -15981,32 +16542,22 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "VhclCtrl Steering Ang"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "VhclCtrl Steering AngVel"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "VhclCtrl Steering AngAcc"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "VhclCtrl Steering Trq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "VhclCtrl Steering SteerByTrq"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -16093,14 +16644,10 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"VhclCtrl Brake"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		2
 		Name			"VhclCtrl BrakePark"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -16115,6 +16662,7 @@ Model {
 	      Parameters	      "'VehicleControl'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      S-Function
@@ -16128,6 +16676,7 @@ Model {
 	      Parameters	      "'VehicleControlUpd'"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -16338,20 +16887,15 @@ Model {
 	      Name		      "<Your model here>"
 	      Position		      [408, 382, 494, 396]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "2235"
 	      Name		      "When implementing a vehicle control model,\nbe sure to add '-disablevehiclecontrol' to the command"
-	      " line arguments\nin the CarMaker Model Configuration block.\nOtherwise your model will possibly not see the or"
-	      "iginal DrivMan signals\non its inputs, but those of a currently activated C-coded vehicle control model instead"
-	      "."
+	      " line arguments\nin the CarMaker Model Configuration block.\nOtherwise your model will possibly not see the ori"
+	      "ginal DrivMan signals\non its inputs, but those of a currently activated C-coded vehicle control model instead."
 	      Position		      [147, 527, 526, 589]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      ZOrder		      -2
 	    }
 	  }
@@ -16464,9 +17008,12 @@ Model {
       Position		      [40, 130, 103, 193]
       ZOrder		      -2
       BackgroundColor	      "lightBlue"
-      LibraryVersion	      "1.494"
+      LibraryVersion	      "1.495"
       SourceBlock	      "CarMaker4SL/Edit Model\nConfiguration"
       SourceType	      ""
+      SourceProductName	      "CarMaker4SL"
+      SFunctionModules	      "''"
+      MultiThreadCoSim	      "auto"
     }
     Block {
       BlockType		      SubSystem
@@ -16479,10 +17026,9 @@ Model {
       LoadFcn		      "if ~length(which('cmself')), cmenv; end"
       OpenFcn		      "cmblockmagic('gui_fix_display'); CM_Simulink"
       RequestExecContextInheritance off
-      Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		21
+	$ObjectID		26
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('CarMakerGUI.png'));"
       }
@@ -16490,6 +17036,9 @@ Model {
 	Name			"Open CarMaker GUI"
 	Location		[383, 644, 639, 1009]
 	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -16501,6 +17050,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  S-Function
 	  Name			  "S-Function"
@@ -16511,16 +17061,15 @@ Model {
 	  FunctionName		  "cm_gui"
 	  SFunctionDeploymentMode off
 	  EnableBusSupport	  off
+	  SFcnIsStateOwnerBlock	  off
 	}
       }
     }
     Annotation {
       SID		      "704"
       Name		      "Generic Car Model"
-      Position		      [105, 34, 266, 57]
+      Position		      [105, 34, 258, 57]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
       ZOrder		      -1
       FontSize		      18
       FontWeight	      "bold"
@@ -16531,28 +17080,380 @@ Model {
       Name		      "You may use this model as a starting point."
       Position		      [92, 65, 283, 79]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
       ZOrder		      -2
     }
     Annotation {
       SID		      "706"
-      Name		      "It already contains everything to run a simple CarMaker simulation.\nBuild your Simulink model aro"
-      "und it."
-      Position		      [31, 79, 344, 105]
+      Name		      "It already contains everything to run a simple CarMaker simulation.\nBuild your Simulink model arou"
+      "nd it."
+      Position		      [31, 79, 328, 105]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
       ZOrder		      -3
     }
     Annotation {
       SID		      "707"
-      Name		      "CarMaker 8.1.1"
-      Position		      [106, 9, 265, 23]
+      Name		      "CarMaker 9.1.2"
+      Position		      [106, 9, 176, 23]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
       ZOrder		      -4
     }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000019
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "generic"
+    sfVersion		    80000019
+    firstTarget		    17
+  }
+  chart {
+    id			    2
+    machine		    1
+    name		    "CarMaker/Sensor/For Iterator\nSubsystem/MATLAB Function"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 3 0 0]
+    viewObj		    2
+    visible		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    40
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+    firstData		    4
+    firstTransition	    15
+    firstJunction	    14
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [Object_dx,Object_dy,Vel_x,ObjectType,Object_ID] = ...\n    fcn(width,RefPt_dx,RefPt_dy,"
+      "...\n    v_x,Obj_idx)\n%% We need to define Local Variables and persist the data for multiple traffic Objects\n%"
+      " Create a vector dynamically based on the ObjDetected & Obj_idx\n\npersistent  local_Posx local_Posy ...\n     l"
+      "ocal_vx ...\n     local_ObjectType local_Object_ID\n \nif isempty(local_Posx) || Obj_idx == 0 || isempty(local_O"
+      "bject_ID)\n    \n    local_Posx   = zeros(5,1) ;\n    local_Posy   = zeros(5,1) ;\n    \n    local_vx     = zero"
+      "s(5,1) ;\n   \n    local_ObjectType = zeros(5,1);\n    local_Object_ID  = zeros(5,1);\nend\n\n\n    local_Posx(O"
+      "bj_idx+1,1)   = RefPt_dx ;\n    local_Posy(Obj_idx+1,1)   = RefPt_dy ;\n \n    local_vx(Obj_idx+1,1)     = v_x ;"
+      "\n\n    local_Object_ID(Obj_idx+1,1) = Obj_idx+1;\n    \n    if(width<1)\n         local_ObjectType(Obj_idx+1,1)"
+      "=2;\n    else\n        local_ObjectType(Obj_idx+1,1)=4;\n    end\n    \n\nObject_dx = local_Posx ;\nObject_dy = "
+      "local_Posy ;\n\nVel_x = local_vx ;\n\nObjectType = local_ObjectType;\nObject_ID = local_Object_ID;\n\nend"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    5
+    name		    "Object_dx"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 0 5]
+  }
+  data {
+    id			    5
+    ssIdNumber		    7
+    name		    "width"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 4 6]
+  }
+  data {
+    id			    6
+    ssIdNumber		    9
+    name		    "RefPt_dx"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 5 7]
+  }
+  data {
+    id			    7
+    ssIdNumber		    10
+    name		    "RefPt_dy"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 6 8]
+  }
+  data {
+    id			    8
+    ssIdNumber		    12
+    name		    "v_x"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 7 9]
+  }
+  data {
+    id			    9
+    ssIdNumber		    21
+    name		    "Obj_idx"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 8 10]
+  }
+  data {
+    id			    10
+    ssIdNumber		    22
+    name		    "Object_dy"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 9 11]
+  }
+  data {
+    id			    11
+    ssIdNumber		    27
+    name		    "Vel_x"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 10 12]
+  }
+  data {
+    id			    12
+    ssIdNumber		    39
+    name		    "ObjectType"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 11 13]
+  }
+  data {
+    id			    13
+    ssIdNumber		    40
+    name		    "Object_ID"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 12 0]
+  }
+  junction {
+    id			    14
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [2 0 0]
+  }
+  transition {
+    id			    15
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+    linkNode		    [2 0 0]
+  }
+  instance {
+    id			    16
+    machine		    1
+    name		    "CarMaker/Sensor/For Iterator\nSubsystem/MATLAB Function"
+    chart		    2
+  }
+  target {
+    id			    17
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
   }
 }

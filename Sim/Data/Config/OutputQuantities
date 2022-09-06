@@ -2,31 +2,55 @@
 FileIdent = CarMaker-OutputQuantities 1
 
 DStore.Format = erg
+DStore.Compression = none
 DStore.dt.fast = 0.001
 DStore.dt.normal = 0.01
 DStore.dt.slow = 0.1
 
 DStore.Quantities.fast:
-
 DStore.Quantities.normal:
+	Brake.Hyd.Sys.pWB_*
+	Car.CF*.rx
+	Car.CF*.ry
+	Car.CF*.rz
+	Car.CF*.tx
+	Car.CF*.ty
+	Car.CF*.tz
+	Car.CR*.rx
+	Car.CR*.ry
+	Car.CR*.rz
+	Car.CR*.tx
+	Car.CR*.ty
+	Car.CR*.tz
+	Car.Fx*
+	Car.Fy*
+	Car.Fz*
+	Car.LongSlip*
+	Car.muRoad*
+	Car.TrqAlign*
+	Car.TrqOvert*
+	Car.TrqRoll*
+	Car.W*.rot
+	MC.Gen.a_1.*
+	MC.Pitch*
+	MC.Roll*
+	MC.TF.Frc.*
+	MC.TR.Frc.*
+	MC.Yaw*
+	PT.W*.rotv
+	PT.WF.*
+	PT.WR.*
+	Traffic.Ahead.*
+	Traffic.Sheer.*
+	Vhcl.*.LongSlip
+	Vhcl.*.SideSlip
 	AccelCtrl.ACC.DesiredAx
 	AccelCtrl.ACC.DesiredDist
 	AccelCtrl.ACC.DesiredSpd
 	AccelCtrl.ACC.DesiredTGap
 	Brake.Hyd.Sys.pMC
-	Brake.Hyd.Sys.pWB_*
-	Car.CF*.rx
-	Car.CF*.ry
-	Car.CF*.rz
-	Car.CR*.rx
-	Car.CR*.ry
-	Car.CR*.rz
-	Car.CF*.tx
-	Car.CF*.ty
-	Car.CF*.tz
-	Car.CR*.tx
-	Car.CR*.ty
-	Car.CR*.tz
+	Car.ax
+	Car.ay
 	Car.Distance
 	Car.Fr1.rx
 	Car.Fr1.ry
@@ -34,25 +58,12 @@ DStore.Quantities.normal:
 	Car.Fr1.tx
 	Car.Fr1.ty
 	Car.Fr1.tz
-	Car.Fx*
-	Car.Fy*
-	Car.Fz*
 	Car.Gen.ax_1
 	Car.Gen.ay_1
 	Car.Gen.vx_1
-	Car.LongSlip*
 	Car.Pitch
 	Car.Roll
 	Car.SideSlipAngle
-	Car.TrqAlign*
-	Car.TrqOvert*
-	Car.TrqRoll*
-	Car.W*.rot
-	Car.Yaw
-	Car.YawRate
-	Car.ax
-	Car.ay
-	Car.muRoad*
 	Car.tx
 	Car.ty
 	Car.v
@@ -60,7 +71,8 @@ DStore.Quantities.normal:
 	Car.vFR
 	Car.vRL
 	Car.vRR
-	Sensor.Object.RadarL.relvTgt.NearPnt.ds_p
+	Car.Yaw
+	Car.YawRate
 	DM.Brake
 	DM.BrakeLever
 	DM.Clutch
@@ -70,31 +82,22 @@ DStore.Quantities.normal:
 	DM.ManNo
 	DM.Steer.Ang
 	DM.Steer.Trq
-	MC.Distance
-	MC.Gen.a_1.*
-	MC.Pitch*
-	MC.Roll*
-	MC.TF.Frc.*
-	MC.TF.LongSlip
-	MC.TF.SlipAngle
-	MC.TR.Frc.*
-	MC.TR.LongSlip
-	MC.TR.SlipAngle
-	MC.Yaw*
 	MC.alHori
 	MC.atHori
+	MC.Distance
+	MC.TF.LongSlip
+	MC.TF.SlipAngle
+	MC.TR.LongSlip
+	MC.TR.SlipAngle
 	MC.v
 	PT.Clutch.Trq_out
 	PT.Control.Consump.Fuel.Abs
 	PT.Control.Consump.Fuel.Act
 	PT.Control.Consump.Fuel.Avg
-	PT.Engine.Trq
 	PT.Engine.be
 	PT.Engine.rot
 	PT.Engine.rotv
-	PT.W*.rotv
-	PT.WF.*
-	PT.WR.*
+	PT.Engine.Trq
 	PwrD.Tire.CambDeflFL
 	PwrD.Tire.CambDeflFR
 	PwrD.Tire.LatSlipFL
@@ -117,13 +120,39 @@ DStore.Quantities.normal:
 	PwrS.PT
 	PwrS.Tire
 	PwrS.Total
+	Sensor.Object.RadarL.relvTgt.NearPnt.ds_p
+	Sensor.TSign.TS00.nSign
+	Sensor.TSign.TS00.SpeedLimit.0.ds
+	Sensor.TSign.TS00.SpeedLimit.0.ds.x
+	Sensor.TSign.TS00.SpeedLimit.0.ds.y
+	Sensor.TSign.TS00.SpeedLimit.0.ds.z
+	Sensor.TSign.TS00.SpeedLimit.0.Main.val0
+	Sensor.TSign.TS00.SpeedLimit.0.Main.val1
+	Sensor.TSign.TS00.SpeedLimit.0.ObjId
+	Sensor.TSign.TS00.SpeedLimit.1.ds
+	Sensor.TSign.TS00.SpeedLimit.1.ds.x
+	Sensor.TSign.TS00.SpeedLimit.1.ds.y
+	Sensor.TSign.TS00.SpeedLimit.1.ds.z
+	Sensor.TSign.TS00.SpeedLimit.1.Main.val0
+	Sensor.TSign.TS00.SpeedLimit.1.Main.val1
+	Sensor.TSign.TS00.SpeedLimit.1.ObjId
+	Sensor.TSign.TS00.SpeedLimit.2.ds
+	Sensor.TSign.TS00.SpeedLimit.2.ds.x
+	Sensor.TSign.TS00.SpeedLimit.2.ds.y
+	Sensor.TSign.TS00.SpeedLimit.2.ds.z
+	Sensor.TSign.TS00.SpeedLimit.2.Main.val0
+	Sensor.TSign.TS00.SpeedLimit.2.Main.val1
+	Sensor.TSign.TS00.SpeedLimit.2.ObjId
+	Sensor.TSign.TS00.SpeedLimit.3.ds
+	Sensor.TSign.TS00.SpeedLimit.3.ds.x
+	Sensor.TSign.TS00.SpeedLimit.3.ds.y
+	Sensor.TSign.TS00.SpeedLimit.3.ds.z
+	Sensor.TSign.TS00.SpeedLimit.3.Main.val0
+	Sensor.TSign.TS00.SpeedLimit.3.Main.val1
+	Sensor.TSign.TS00.SpeedLimit.3.ObjId
+	Sensor.TSign.TS00.SpeedLimit.nSign
+	Sensor.TSign.TS00.TimeStamp
 	Steer.WhlAng
 	Time
-	Traffic.Ahead.*
-	Traffic.Sheer.*
-	Vhcl.*.LongSlip
-	Vhcl.*.SideSlip
 	Vhcl.sRoad
-
 DStore.Quantities.slow:
-

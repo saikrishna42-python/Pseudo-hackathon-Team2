@@ -1,0 +1,619 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Car 9
+FileCreator = CarMaker 2020-06-08 10:44:15 TEMPLATE
+Description:
+	Typical, unvalidated data for delivery van
+	With Rear Wheel Drive, Flexible Vehicle Body
+	Tire: 235/65 R16
+FileClass.Edition = pro
+
+
+## General ###############################################################
+Picture.PicFName = Ford_Transit_2014.png
+Movie.Skin.FName = 3D/Vehicles/Ford_Transit_2014.mobj
+Hitch.System =
+Vehicle.OuterSkin = 0.0 0.875 0.324 5.981 -0.872 2.517
+Additional.Comment:
+
+
+## Mass Inertia Geometry #################################################
+WheelCarrier.fl.mass = 56.835
+WheelCarrier.fl.I = 0.528 0.528 0.528 -0.0 -0.0 -0.0
+WheelCarrier.fl.pos = 4.958 0.872 0.324
+WheelCarrier.fr.mass = 56.835
+WheelCarrier.fr.I = 0.528 0.528 0.528 -0.0 -0.0 -0.0
+WheelCarrier.fr.pos = 4.958 -0.872 0.324
+WheelCarrier.rl.mass = 93.755
+WheelCarrier.rl.I = 0.706 0.706 0.706 -0.0 -0.0 -0.0
+WheelCarrier.rl.pos = 1.208 0.875 0.324
+WheelCarrier.rr.mass = 93.755
+WheelCarrier.rr.I = 0.706 0.706 0.706 -0.0 -0.0 -0.0
+WheelCarrier.rr.pos = 1.208 -0.875 0.324
+Wheel.fl.mass = 32.017
+Wheel.fl.I = 0.893 1.785 0.893
+Wheel.fl.pos = 4.958 0.872 0.324
+Wheel.fr.mass = 32.017
+Wheel.fr.I = 0.893 1.785 0.893
+Wheel.fr.pos = 4.958 -0.872 0.324
+Wheel.rl.mass = 29.319
+Wheel.rl.I = 0.872 1.745 0.872
+Wheel.rl.pos = 1.208 0.875 0.324
+Wheel.rr.mass = 29.319
+Wheel.rr.I = 0.872 1.745 0.872
+Wheel.rr.pos = 1.208 -0.875 0.324
+RefPointInputSystem = 0.0 0.0 0.0
+Hitch.pos = -0.1 0.0 0.4
+Jack.fl.pos = 4.472 0.872 0.324
+Jack.fr.pos = 4.472 -0.872 0.324
+Jack.rl.pos = 1.694 0.875 0.324
+Jack.rr.pos = 1.694 -0.875 0.324
+Virtual.PoA = 3.083  0.000  0.957
+TrimLoad.0.mass = 0.0 0
+TrimLoad.0.I = 0.0  0.0  0.0
+TrimLoad.0.pos = 3.083  0.436  1.072
+TrimLoad.0.mounted = Fr1A
+TrimLoad.0.RefFr = FrD
+TrimLoad.0.name = Trim Load 0
+TrimLoad.1.mass = 0.0 0
+TrimLoad.1.I = 0.0  0.0  0.0
+TrimLoad.1.pos = 3.083  -0.436  1.072
+TrimLoad.1.mounted = Fr1A
+TrimLoad.1.RefFr = FrD
+TrimLoad.1.name = Trim Load 1
+Assembly.Comment:
+
+
+## Vehicle Model #########################################################
+VehicleModel = Vhcl_2Axle
+VehicleModel.Kind = FlexBody
+VehicleModel.Mode = BodyA+B
+nAxle = 2
+BodyA.mass = 1163.1
+BodyA.I = 811.16 3116.6 3006.7 -0.0 -0.0 -0.0
+BodyA.pos = 3.138 0.0 1.072
+BodyB.mass = 1163.1
+BodyB.I = 811.16 3116.6 3006.7 -0.0 -0.0 -0.0
+BodyB.pos = 3.138 0.0 1.072
+Flex.JointFr1Fr1B.pos = 3.138 0.0 1.072
+Flex.JointFr1Fr1B.Kind = Coeff
+Flex.JointFr1Fr1B.k.x = 19896.0
+Flex.JointFr1Fr1B.k.y = 71612.0
+Flex.JointFr1Fr1B.k.x.Amplify = 1.0
+Flex.JointFr1Fr1B.k.y.Amplify = 1.0
+Flex.JointFr1Fr1B.d.x = 994.8
+Flex.JointFr1Fr1B.d.y = 3580.6
+Flex.JointFr1Fr1B.d.x.Amplify = 1.0
+Flex.JointFr1Fr1B.d.y.Amplify = 1.0
+Vhclbody.Comment:
+
+
+## Eng ###################################################################
+Eng.Kind = Rigid
+Eng.Joint.pos = 0.0  0.0  0.0
+Eng.Orientation = 0.0  0.0  0.0
+
+
+## Aerodynamics ##########################################################
+Aero.Kind = Coeff6x1 1
+Aero.Marker.pos = 5.981 0.0 1.072
+Aero.pos = 2.811 0.0 1.258
+Aero.Ax = 4.431
+Aero.lReference = 5.981
+Aero.Crosswind.Kind = Step
+Aero.Coeff:
+	-180.0 -0.615 -0.0 0.149 0.0 0.002 0.0
+	-160.0 -1.075 -0.391 0.248 -0.036 -0.098 0.123
+	-140.0 -1.198 -1.005 0.309 -0.176 -0.21 0.258
+	-120.0 -0.883 -1.529 0.328 -0.363 -0.209 0.256
+	-100.0 -0.291 -1.648 0.306 -0.445 -0.079 0.096
+	-90.0 0.0 -1.541 0.281 -0.423 0.0 -0.0
+	-80.0 0.275 -1.558 0.306 -0.421 0.074 -0.091
+	-70.0 0.536 -1.472 0.322 -0.379 0.138 -0.169
+	-60.0 0.748 -1.296 0.328 -0.307 0.178 -0.217
+	-50.0 0.886 -1.056 0.324 -0.221 0.186 -0.228
+	-40.0 0.936 -0.785 0.309 -0.138 0.164 -0.202
+	-30.0 0.897 -0.518 0.284 -0.07 0.121 -0.15
+	-25.0 0.847 -0.395 0.267 -0.045 0.096 -0.12
+	-20.0 0.78 -0.284 0.248 -0.026 0.071 -0.089
+	-15.0 0.7 -0.187 0.227 -0.013 0.048 -0.061
+	-10.0 0.609 -0.107 0.203 -0.005 0.027 -0.035
+	-5.0 0.511 -0.045 0.177 -0.001 0.011 -0.015
+	0.0 0.41 0.0 0.149 -0.0 -0.002 0.0
+	5.0 0.511 0.045 0.177 0.001 0.011 0.015
+	10.0 0.609 0.107 0.203 0.005 0.027 0.035
+	15.0 0.7 0.187 0.227 0.013 0.048 0.061
+	20.0 0.78 0.284 0.248 0.026 0.071 0.089
+	25.0 0.847 0.395 0.267 0.045 0.096 0.12
+	30.0 0.897 0.518 0.284 0.07 0.121 0.15
+	40.0 0.936 0.785 0.309 0.138 0.164 0.202
+	50.0 0.886 1.056 0.324 0.221 0.186 0.228
+	60.0 0.748 1.296 0.328 0.307 0.178 0.217
+	70.0 0.536 1.472 0.322 0.379 0.138 0.169
+	80.0 0.275 1.558 0.306 0.421 0.074 0.091
+	90.0 0.0 1.541 0.281 0.423 0.0 0.0
+	100.0 -0.291 1.648 0.306 0.445 -0.079 -0.096
+	120.0 -0.883 1.529 0.328 0.363 -0.209 -0.256
+	140.0 -1.198 1.005 0.309 0.176 -0.21 -0.258
+	160.0 -1.075 0.391 0.248 0.036 -0.098 -0.123
+	180.0 -0.615 0.0 0.149 -0.0 0.002 -0.0
+
+
+## Suspensions ###########################################################
+SuspF.Spring.Amplify = 1.0
+SuspF.Spring:
+	0.0 0.0
+	0.1 5317.6
+	1.0 53176.0
+SuspF.SecSpring.Amplify = 1.0
+SuspF.Damp_Push.Amplify = 1.0
+SuspF.Damp_Push:
+	0.0 0.0
+	0.1 361.41
+	1.0 1757.8
+SuspF.Damp_Pull.Amplify = 1.0
+SuspF.Damp_Pull:
+	0.0 0.0
+	0.1 671.73
+	1.0 4861.0
+SuspF.Damper.TopMnt.On = 0
+SuspF.Buf_Push.tz0 = 0.032
+SuspF.Buf_Push.Amplify = 1.0
+SuspF.Buf_Push:
+	0.0 0.0
+	0.005 38.537
+	0.01 97.108
+	0.015 183.52
+	0.02 308.3
+	0.025 485.54
+	0.03 734.09
+	0.035 1079.0
+	0.04 1553.7
+	0.045 2202.3
+	0.05 3083.0
+	0.055 4272.8
+	0.06 5872.7
+	0.065 8015.8
+	0.07 10876.0
+	0.075 14682.0
+SuspF.Buf_Pull.tz0 = -0.099
+SuspF.Buf_Pull.Amplify = 1.0
+SuspF.Buf_Pull:
+	0.0 0.0
+	0.005 183.52
+	0.01 734.09
+	0.015 2202.3
+	0.02 5872.7
+	0.025 14682.0
+SuspF.Stabi.Amplify = 1.0
+SuspF.Stabi.Unit = N/m
+SuspF.Stabi = 31905.0
+SuspF.Kin.N = 1
+SuspF.Com.N = 0
+SuspF.Kin.0.Kind = Linear2D 1
+SuspF.Kin.0.ValidSide = left+right
+SuspF.Kin.0.InputSide = left
+SuspF.Kin.0.L.tx = 0.0 0.028 -0.338
+SuspF.Kin.0.L.ty = 0.0 -0.088 0.132
+SuspF.Kin.0.L.tz = 0.0 1.0 -0.032
+SuspF.Kin.0.L.rx = 0.01 0.628 -0.855
+SuspF.Kin.0.L.ry = 0.0 -0.598 -0.972
+SuspF.Kin.0.L.rz = -0.003 0.105 5.0
+SuspF.Kin.0.L.lSpring = 0.0 -1.0 0.0
+SuspF.Kin.0.L.lDamp = 0.0 -1.0 0.0
+SuspF.Kin.0.L.lBuf = 0.0 -1.0 0.0
+SuspF.Kin.0.L.lStabi = 0.0 1.0 0.0
+SuspF.WhlBearing.On = 0
+SuspR.Spring.Amplify = 1.0
+SuspR.Spring:
+	0.0 0.0
+	0.1 8913.0
+	1.0 89130.0
+SuspR.SecSpring.Amplify = 1.0
+SuspR.Damp_Push.Amplify = 1.0
+SuspR.Damp_Push:
+	0.0 0.0
+	0.1 429.17
+	1.0 2435.4
+SuspR.Damp_Pull.Amplify = 1.0
+SuspR.Damp_Pull:
+	0.0 0.0
+	0.1 763.54
+	1.0 5779.1
+SuspR.Damper.TopMnt.On = 0
+SuspR.Buf_Push.tz0 = 0.128
+SuspR.Buf_Push.Amplify = 1.0
+SuspR.Buf_Push:
+	0.0 0.0
+	0.005 27.755
+	0.01 66.78
+	0.015 120.51
+	0.02 193.3
+	0.025 290.68
+	0.03 419.63
+	0.035 588.96
+	0.04 809.75
+	0.045 1095.9
+	0.05 1464.9
+	0.055 1938.6
+	0.06 2544.1
+	0.065 3315.7
+	0.07 4295.7
+	0.075 5537.0
+	0.08 7105.2
+	0.085 9082.0
+	0.09 11569.0
+	0.095 14690.0
+	0.1 18603.0
+	0.105 23499.0
+	0.11 29616.0
+	0.115 37249.0
+SuspR.Buf_Pull.tz0 = -0.128
+SuspR.Buf_Pull.Amplify = 1.0
+SuspR.Buf_Pull:
+	0.0 0.0
+	0.005 120.51
+	0.01 419.63
+	0.015 1095.9
+	0.02 2544.1
+	0.025 5537.0
+	0.03 11569.0
+SuspR.Stabi.Amplify = 1.0
+SuspR.Stabi.Unit = N/m
+SuspR.Stabi = 17826.0
+SuspR.Kin.N = 1
+SuspR.Com.N = 0
+SuspR.Kin.0.Kind = Linear2D 1
+SuspR.Kin.0.ValidSide = left+right
+SuspR.Kin.0.InputSide = left
+SuspR.Kin.0.L.tx = 0.0 -0.0 0.0
+SuspR.Kin.0.L.ty = 0.0 0.0 0.0
+SuspR.Kin.0.L.tz = 0.0 1.0 0.0
+SuspR.Kin.0.L.rx = -0.0 0.571 -0.571
+SuspR.Kin.0.L.ry = 0.0 0.0 0.0
+SuspR.Kin.0.L.rz = -0.0 0.0 -0.0
+SuspR.Kin.0.L.lSpring = 0.0 -0.9 -0.1
+SuspR.Kin.0.L.lDamp = 0.0 -0.9 -0.1
+SuspR.Kin.0.L.lBuf = 0.0 -0.9 -0.1
+SuspR.Kin.0.L.lStabi = 0.0 1.0 0.0
+SuspR.WhlBearing.On = 0
+SuspExtFrcs.Kind =
+Susp.Comment:
+
+
+## Steering ##############################################################
+Steering.Kind = GenAngle 1
+Steering.Comment:
+Steering.Rack2StWhl = 73.7
+
+
+## Tires #################################################################
+Tire.0 = Examples/RT_235_65R16_p2.50
+Tire.1 = Examples/RT_235_65R16_p2.50
+Tire.2 = Examples/RT_235_65R16_p2.50
+Tire.3 = Examples/RT_235_65R16_p2.50
+AxleR.TwinTiresOn = 0
+Tires.Comment:
+
+
+## Brake #################################################################
+Brake.Kind = Hyd 1
+Brake.Torque.Amplify = 1.0 1.0 1.0 1.0
+Brake.Control.Kind = HydBasic 1
+Brake.Control.Mode = NoController
+Brake.System.Kind = PresDistrib 1
+Brake.System.pMC_based_on = PedalForce
+Brake.System.Pedal2PedalFrc = 500.0
+Brake.System.PedalForce2pMC = 0.4
+Brake.System.tResp = 0.005
+Brake.System.tBuildUp = 0.08
+Brake.System.pWB2Trq = 17.188 17.188 8.594 8.594
+Brake.System.Park.Torque_max = 0.0 0.0 3499.2 3499.2
+Brake.Comment:
+
+
+## PowerTrain Assembly ###################################################
+PowerTrain.Engine.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Engine.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Engine.Bdy.Mounting = FrEng
+PowerTrain.Engine.Bdy.RefFr = FrD
+PowerTrain.Engine.Tank.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Engine.Tank.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Engine.Tank.Bdy.Mounting = Fr1A
+PowerTrain.Engine.Tank.Bdy.RefFr = FrD
+PowerTrain.GearBox.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.GearBox.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.GearBox.Bdy.Mounting = FrEng
+PowerTrain.GearBox.Bdy.RefFr = FrD
+PowerTrain.GearBoxM.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.GearBoxM.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.GearBoxM.Bdy.Mounting = Fr1A
+PowerTrain.GearBoxM.Bdy.RefFr = FrD
+PowerTrain.GearBoxM1.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.GearBoxM1.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.GearBoxM1.Bdy.Mounting = Fr1A
+PowerTrain.GearBoxM1.Bdy.RefFr = FrD
+PowerTrain.GearBoxM2.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.GearBoxM2.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.GearBoxM2.Bdy.Mounting = Fr1A
+PowerTrain.GearBoxM2.Bdy.RefFr = FrD
+PowerTrain.GearBoxM3.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.GearBoxM3.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.GearBoxM3.Bdy.Mounting = Fr1A
+PowerTrain.GearBoxM3.Bdy.RefFr = FrD
+PowerTrain.Motor.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Motor.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Motor.Bdy.Mounting = Fr1A
+PowerTrain.Motor.Bdy.RefFr = FrD
+PowerTrain.Motor1.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Motor1.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Motor1.Bdy.Mounting = Fr1A
+PowerTrain.Motor1.Bdy.RefFr = FrD
+PowerTrain.Motor2.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Motor2.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Motor2.Bdy.Mounting = Fr1A
+PowerTrain.Motor2.Bdy.RefFr = FrD
+PowerTrain.Motor3.Bdy.pos = 0.0 0.0 0.0
+PowerTrain.Motor3.Bdy.Ori = 0.0 0.0 0.0
+PowerTrain.Motor3.Bdy.Mounting = Fr1A
+PowerTrain.Motor3.Bdy.RefFr = FrD
+PowerTrain.PowerSupply.BattLV.Bdy.0.pos = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattLV.Bdy.0.Ori = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattLV.Bdy.0.Mounting = Fr1A
+PowerTrain.PowerSupply.BattLV.Bdy.0.RefFr = FrD
+PowerTrain.PowerSupply.BattLV.Bdy.1.pos = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattLV.Bdy.1.Ori = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattLV.Bdy.1.Mounting = Fr1A
+PowerTrain.PowerSupply.BattLV.Bdy.1.RefFr = FrD
+PowerTrain.PowerSupply.BattHV.Bdy.0.pos = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattHV.Bdy.0.Ori = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattHV.Bdy.0.Mounting = Fr1A
+PowerTrain.PowerSupply.BattHV.Bdy.0.RefFr = FrD
+PowerTrain.PowerSupply.BattHV.Bdy.1.pos = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattHV.Bdy.1.Ori = 0.0 0.0 0.0
+PowerTrain.PowerSupply.BattHV.Bdy.1.Mounting = Fr1A
+PowerTrain.PowerSupply.BattHV.Bdy.1.RefFr = FrD
+
+
+## Powertrain ############################################################
+PowerTrain.Kind = Generic 1
+PowerTrain.Comment:
+PowerTrain.OSRate = 5
+
+PowerTrain.Engine.Kind = Mapping 1
+PowerTrain.Engine.I = 0.162
+PowerTrain.Engine.Crankshaft.Orientation = x-axis
+PowerTrain.Engine.tBuildUp = 0.0
+PowerTrain.Engine.Mapping.Kind = DragFullLoad
+PowerTrain.Engine.TrqKl15Off = -80.0
+PowerTrain.Engine.rotvOff = 500.0
+PowerTrain.Engine.nIdle = 591.61
+PowerTrain.Engine.Exponent = 0.8
+PowerTrain.Engine.DragPower.Amplify = 1.0
+PowerTrain.Engine.DragPower:
+	354.96 -9.463
+	473.29 -9.463
+	591.61 -9.463
+	1100.8 -29.348
+	1610.0 -42.923
+	1840.0 -49.055
+	2070.0 -55.186
+	2300.0 -61.318
+	2900.0 -77.314
+	3300.0 -87.978
+	3500.0 -93.31
+	3616.7 -96.421
+	3733.3 -99.531
+	3850.0 -102.64
+PowerTrain.Engine.FullLoadPower.Amplify = 1.0
+PowerTrain.Engine.FullLoadPower:
+	354.96 0.0
+	473.29 50.112
+	591.61 96.409
+	1100.8 253.54
+	1610.0 385.0
+	1840.0 385.0
+	2070.0 385.0
+	2300.0 385.0
+	2900.0 384.15
+	3300.0 362.16
+	3500.0 311.03
+	3616.7 250.49
+	3733.3 152.51
+	3850.0 0.0
+PowerTrain.Engine.FuelConsume = 0
+PowerTrain.Engine.PwrCorr.Active = 0
+PowerTrain.Engine.Turbo.Active = 0
+PowerTrain.Engine.IMP.Active = 0
+PowerTrain.Engine.Bdy.mass = 0.0
+PowerTrain.Engine.Bdy.I = 0.0 0.0 0.0
+PowerTrain.Clutch.Kind = Manual 1
+PowerTrain.Clutch.I_in = 0.096
+PowerTrain.Clutch.I_out = 0.096
+PowerTrain.Clutch.ConnectPos = 0.3
+PowerTrain.Clutch.DisconnectPos = 0.7
+PowerTrain.Clutch.Trq_max = 577.5
+PowerTrain.Clutch.slope = 57.75
+PowerTrain.Clutch.c.Kind = Linear
+PowerTrain.Clutch.c = 1500.0
+PowerTrain.GearBox.Kind = Manual 1
+PowerTrain.GearBox.I_in = 0.001
+PowerTrain.GearBox.I_out = 0.071
+PowerTrain.GearBox.iForwardGears = 4.19 2.42 1.54 1.07 0.83 0.70
+PowerTrain.GearBox.iBackwardGears = -4.19
+PowerTrain.GearBox.nFit = 50
+PowerTrain.GearBox.LossKind = Constant
+PowerTrain.GearBox.EtaForwardGears = 1.0 1.0 1.0 1.0 1.0 1.0
+PowerTrain.GearBox.EtaBackwardGears = 1.0
+PowerTrain.GearBox.Bdy.mass = 0.0
+PowerTrain.GearBox.Bdy.I = 0.0 0.0 0.0
+
+PowerTrain.Engine.Tank.Bdy.mass = 0.0
+PowerTrain.Engine.Tank.Bdy.I = 0.0 0.0 0.0
+
+PowerTrain.DL.Kind = GenRear 1
+PowerTrain.DL.FlexShaft = 0
+
+PowerTrain.DL.RDiff.Eta = 1.0
+PowerTrain.DL.RDiff.i = 3.31
+PowerTrain.DL.RDiff.I_in = 0.001
+PowerTrain.DL.RDiff.I_out = 0.001
+PowerTrain.DL.RDiff.I_Cage = 0.0
+PowerTrain.DL.RDiff.Cpl.Kind =
+PowerTrain.DL.TrqExt2DiffOn = 0
+PowerTrain.DL.TrqExt2WheelOn = 0
+PowerTrain.MotorISG.Kind = Starter 1
+PowerTrain.MotorISG.I = 0.001
+PowerTrain.MotorISG.Ratio = 4.0
+PowerTrain.MotorISG.VoltageLevel = LV
+PowerTrain.MotorISG.Pwr_max = 2.0
+PowerTrain.MotorISG.Trq_max = 50.0
+PowerTrain.MotorISG.rotv_max = 7000.0
+PowerTrain.Control.Kind = Generic 1
+PowerTrain.ControlOSM.Kind = Generic 1
+PowerTrain.Control.StartEngineWithSST = 0
+
+PowerTrain.Control.GasInterpret.Active = 0
+
+PowerTrain.ECU.Kind = Basic 1
+PowerTrain.ECU.ISCtrl.Active = 1
+PowerTrain.ECU.ISCtrl.rotvOff = 1000.0
+PowerTrain.ECU.ISCtrl.LoadMax = 1.0
+PowerTrain.ECU.ISCtrl.p = 0.2
+PowerTrain.ECU.ISCtrl.i = 50
+PowerTrain.ECU.TrqCtrl.p = 0.001
+PowerTrain.ECU.TrqCtrl.i = 5
+PowerTrain.ECU.RotvCtrl.p = 0.1
+PowerTrain.ECU.RotvCtrl.i = 50
+PowerTrain.ECU.nFuelCutOff = 1500.0
+PowerTrain.TCU.Kind =
+PowerTrain.MCU.Kind = Basic 1
+PowerTrain.MCU.MotorISG.TrqCtrl.p = 0.05
+PowerTrain.MCU.MotorISG.TrqCtrl.i = 1.0e2
+PowerTrain.MCU.MotorISG.RotvCtrl.p = 0.05
+PowerTrain.MCU.MotorISG.RotvCtrl.i = 0.025
+PowerTrain.BCU.Kind =
+PowerTrain.PowerSupply.Kind =
+
+
+## Sensors ###############################################################
+Sensor.SAngle.N = 1
+Sensor.SAngle.0.name = SS00
+Sensor.SAngle.0.pos = 3.083 0.0 1.072
+Sensor.SAngle.0.Mounting = Fr1A
+Sensor.Inertial.N = 0
+Sensor.Object.N = 0
+Sensor.Object.ObservRadius = 500.0
+Sensor.FSpace.N = 0
+Sensor.TSign.N = 0
+Sensor.Line.N = 0
+Sensor.Road.N = 0
+Sensor.Collision.Active = 0
+Sensor.GNav.pos = 0.0 0.0 0.0
+Sensor.GNav.Mounting = Fr1A
+Sensor.GNav.UpdRate = 10
+Sensor.GNav.nCycleOffset = 0
+Sensor.GNav.ElevationMask = 10.0
+Sensor.GNav.DirectView = 0
+Sensor.GNav.ShowDDict = 0
+Sensor.GNav.ReceiverClockError.Active = 0
+Sensor.GNav.ReceiverClockError.std = 15.0
+Sensor.GNav.ReceiverClockError.corrTime = 3600.0
+Sensor.GNav.CommonMode.Active = 0
+Sensor.GNav.EphError.std = 3.0
+Sensor.GNav.EphError.corrTime = 1800.0
+Sensor.GNav.IonoModel.Active = 0
+Sensor.GNav.IonoError.std = 5.0
+Sensor.GNav.IonoError.corrTime = 1800.0
+Sensor.GNav.TropoModel.Active = 0
+Sensor.GNav.TropoError.std = 2.0
+Sensor.GNav.TropoError.corrTime = 3600.0
+Sensor.GNav.ReceiverNoise.Active = 0
+Sensor.GNav.ReceiverNoise.stdPsr = 0.1
+Sensor.GNav.ReceiverNoise.stdRr = 0.05
+Sensor.ObjByLane.N = 0
+Sensor.Radar.N = 0
+Sensor.Camera.N = 0
+Sensor.RadarRSILeg.N = 0
+Sensor.RadarRSI.N = 0
+Sensor.USonicRSI.N = 0
+Sensor.LidarRSI.N = 0
+Sensor.CameraRSI.nProcesses = 0
+Sensor.Comment:
+
+
+## Vehicle Control #######################################################
+VehicleControl.0.Kind =
+
+VehicleControl.1.Kind =
+
+VehicleControl.2.Kind =
+
+VehicleControl.3.Kind =
+
+VehicleControl.4.Kind =
+
+VehicleControl.5.Kind =
+
+VehicleControl.6.Kind =
+
+VehicleControl.7.Kind =
+
+VehicleControl.8.Kind =
+
+VehicleControl.9.Kind =
+
+VehicleControl.Comment:
+
+
+## Show ##################################################################
+Crypto.Show:
+	Picture.PicFName
+	Movie.Skin.FName
+	Vehicle.OuterSkin
+	nAxle
+	Steering.Kind
+	Steering.FName
+	Brake.Kind
+	Brake.FName
+	PowerTrain.Kind
+	PowerTrain.FName
+	Sensor.FSpace.N
+	Sensor.RadarRSILeg.N
+	Sensor.RadarRSI.N
+	Sensor.USonicRSI.N
+	Sensor.LidarRSI.N
+	CM4SL.ActivateFcn
+	CM4SL.StartFcn
+	CM4SL.StopFcn
+Crypto.AllowAccess:
+	GenericPlugin
+
+
+## Vehicle Data Set Generator ############################################
+CarGen.Kind = Generator
+CarGen.FName = Ford_Transit_2014
+CarGen.PicFName = Van.tcl
+CarGen.Vehicle.Class = delivery
+CarGen.Vehicle.Kind = FlexBody
+CarGen.Driving.Axle = rear
+CarGen.Vehicle.Weight = 2750.0
+CarGen.Vehicle.Length = 5981.0
+CarGen.Vehicle.Width = 2059.0
+CarGen.Vehicle.Height = 2517.0
+CarGen.Vehicle.WheelBase = 3750.0
+CarGen.Vehicle.TrackFront = 1750.0
+CarGen.Vehicle.TrackRear = 1750.0
+CarGen.Vehicle.RearOverhang = 1208.0
+CarGen.Vehicle.WheelSize = 235.0 65.0 16.0
+CarGen.Engine.NomPower = 114.0
+CarGen.Engine.nNomPower = 3500.0
+CarGen.Engine.MaxTorque = 385.0
+CarGen.Engine.nMaxTorque = 2300.0
+CarGen.GearBox.Kind = Manual
+CarGen.GearBox.nGears = 6.0
+CarGen.GearBox.Spread = 6.0
+CarGen.Steer.TurningCircle = 12.5
+CarGen.Steer.MaxSteerAngle = 600.0
+CarGen.Vehicle.freqf = 1.5
+CarGen.Vehicle.freqr = 2.0
+CarGen.Aero.DragCoeff = 0.41
