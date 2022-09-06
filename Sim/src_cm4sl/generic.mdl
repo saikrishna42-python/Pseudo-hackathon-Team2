@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.395"
+    ComputedModelVersion    "1.408"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,7 +19,7 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 8
+    NumExternalFileReferences 13
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
       Path		      "generic/CarMaker/IPG Vehicle/VehicleSource_BuiltIn"
@@ -60,6 +60,36 @@ Model {
       Reference		      "CarMaker4SL/Read CM Dict"
       Path		      "generic/CarMaker/Sensor/Read CM Dict2"
       SID		      "2280"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Define CM Dict"
+      Path		      "generic/CarMaker/VehicleControl/Define CM Dict"
+      SID		      "2648"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Define CM Dict"
+      Path		      "generic/CarMaker/VehicleControl/Define CM Dict1"
+      SID		      "2649"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/VehicleControl/Read CM Dict"
+      SID		      "2650"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/VehicleControl/Read CM Dict1"
+      SID		      "2651"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "CarMaker4SL/Read CM Dict"
+      Path		      "generic/CarMaker/VehicleControl/SpeedCtrl/desired ax/Read Car.v[m//s]"
+      SID		      "2637"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -116,7 +146,7 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		5
+	Dimension		9
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [0]
@@ -125,22 +155,33 @@ Model {
 	  LoadSaveID		  "0"
 	  Extents		  [1875.0, 755.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, -5.0]
-	  SceneRectInView	  [0.0, -5.0, 1500.0, 604.0]
+	  Offset		  [-575.6328125, -268.0]
+	  SceneRectInView	  [-575.6328125, -268.0, 1500.0, 604.0]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
 	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1726"
+	  LoadSaveID		  "2634"
 	  Extents		  [1875.0, 755.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-306.59999999999991, -208.59999999999997]
-	  SceneRectInView	  [-306.59999999999991, -208.59999999999997, 1500.0, 604.0]
+	  Offset		  [-592.77968749999991, -208.59999999999997]
+	  SceneRectInView	  [-592.77968749999991, -208.59999999999997, 1500.0, 604.0]
 	}
 	Object {
 	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2459"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-315.09609374999991, -41.599999999999966]
+	  SceneRectInView	  [-315.09609374999991, -41.599999999999966, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  8
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -151,7 +192,40 @@ Model {
 	  SceneRectInView	  [-1.1368683772161603e-13, 179.0, 1500.0, 604.0]
 	}
 	Object {
-	  $ObjectID		  8
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1726"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [0.6]
+	  Offset		  [-1113.5333333333331, -388.40000000000009]
+	  SceneRectInView	  [-1113.5333333333331, -388.40000000000009, 2500.0, 1006.6666666666666]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2624"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-537.09999999999991, -3.5999999999999659]
+	  SceneRectInView	  [-537.09999999999991, -3.5999999999999659, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2196"
+	  Extents		  [1875.0, 755.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-234.26250034570677, 269.0]
+	  SceneRectInView	  [-234.26250034570677, 269.0, 1500.0, 604.0]
+	}
+	Object {
+	  $ObjectID		  12
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -162,7 +236,7 @@ Model {
 	  SceneRectInView	  [-172.64687499999991, -276.09999999999997, 1500.0, 604.0]
 	}
 	Object {
-	  $ObjectID		  9
+	  $ObjectID		  13
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -176,7 +250,7 @@ Model {
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		10
+	$ObjectID		14
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -210,9 +284,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "SDG5KOR"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Sep 05 16:46:19 2022"
-  RTWModifiedTimeStamp	  584297114
-  ModelVersionFormat	  "1.%<AutoIncrement:395>"
+  LastModifiedDate	  "Tue Sep 06 14:54:31 2022"
+  RTWModifiedTimeStamp	  584376701
+  ModelVersionFormat	  "1.%<AutoIncrement:408>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -272,7 +346,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    11
+    $ObjectID		    15
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "generic"
     Array {
@@ -316,7 +390,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      12
+      $ObjectID		      16
       Version		      "19.1.1"
       DisabledProps	      []
       Description	      ""
@@ -324,7 +398,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  13
+	  $ObjectID		  17
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -367,7 +441,7 @@ Model {
 	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  14
+	  $ObjectID		  18
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -409,7 +483,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  15
+	  $ObjectID		  19
 	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
@@ -482,7 +556,7 @@ Model {
 	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  16
+	  $ObjectID		  20
 	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
@@ -604,7 +678,7 @@ Model {
 	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  17
+	  $ObjectID		  21
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -654,7 +728,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  18
+	  $ObjectID		  22
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -674,7 +748,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  19
+	  $ObjectID		  23
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -709,7 +783,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  20
+	  $ObjectID		  24
 	  Version		  "19.1.1"
 	  Array {
 	    Type		    "Cell"
@@ -798,7 +872,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      21
+	      $ObjectID		      25
 	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
@@ -888,7 +962,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      22
+	      $ObjectID		      26
 	      Version		      "19.1.1"
 	      Array {
 		Type			"Cell"
@@ -995,7 +1069,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  23
+	  $ObjectID		  27
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1046,11 +1120,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    12
+    $ObjectID		    16
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    24
+    $ObjectID		    28
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1208,6 +1282,10 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+    }
+    Block {
       BlockType		      Stop
     }
     Block {
@@ -1251,6 +1329,22 @@ Model {
       IsWebBlockPanel	      off
     }
     Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      Terminator
     }
   }
@@ -1273,7 +1367,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "2281"
+    SIDHighWatermark	    "2655"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      SubSystem
@@ -1287,14 +1381,14 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		25
+	$ObjectID		29
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('CarMakerSys.png'));"
       }
       System {
 	Name			"CarMaker"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1308,7 +1402,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"60"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  SubSystem
@@ -15279,7 +15373,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "VehicleControl"
-	    Location		    [251, 201, 1244, 1072]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -15324,6 +15418,25 @@ Model {
 	      Inputs		      "2"
 	      DisplayOption	      "bar"
 	      InheritFromInputs	      on
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector"
+	      SID		      "2623"
+	      Ports		      [1, 2]
+	      Position		      [635, 541, 640, 639]
+	      ZOrder		      8
+	      ShowName		      off
+	      OutputSignals	      "DrivMan Brake,DrivMan Gas"
+	      OutputAsBus	      off
+	      Port {
+		PortNumber		1
+		Name			"<DrivMan Brake>"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<DrivMan Gas>"
+	      }
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -15789,464 +15902,6 @@ Model {
 	    }
 	    Block {
 	      BlockType		      SubSystem
-	      Name		      "CreateBus VhclCtrl"
-	      SID		      "2210"
-	      Ports		      [1, 1]
-	      Position		      [225, 342, 380, 388]
-	      ZOrder		      -6
-	      RequestExecContextInheritance off
-	      System {
-		Name			"CreateBus VhclCtrl"
-		Location		[233, 226, 730, 970]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
-		Block {
-		  BlockType		  Inport
-		  Name			  "In"
-		  SID			  "2211"
-		  Position		  [45, 237, 75, 253]
-		  ZOrder		  -1
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  BusCreator
-		  Name			  "BusCreator"
-		  SID			  "2212"
-		  Ports			  [29, 1]
-		  Position		  [310, 27, 315, 463]
-		  ZOrder		  -2
-		  ShowName		  off
-		  Inputs		  "29"
-		  InheritFromInputs	  on
-		}
-		Block {
-		  BlockType		  Demux
-		  Name			  "Demux"
-		  SID			  "2213"
-		  Ports			  [1, 29]
-		  Position		  [120, 27, 125, 463]
-		  ZOrder		  -3
-		  BackgroundColor	  "black"
-		  ShowName		  off
-		  Outputs		  "29"
-		  Port {
-		    PortNumber		    1
-		    Name		    "VhclCtrl SST"
-		  }
-		  Port {
-		    PortNumber		    2
-		    Name		    "VhclCtrl Key"
-		  }
-		  Port {
-		    PortNumber		    3
-		    Name		    "VhclCtrl UserSignal0"
-		  }
-		  Port {
-		    PortNumber		    4
-		    Name		    "VhclCtrl UserSignal1"
-		  }
-		  Port {
-		    PortNumber		    5
-		    Name		    "VhclCtrl UserSignal2"
-		  }
-		  Port {
-		    PortNumber		    6
-		    Name		    "VhclCtrl UserSignal3"
-		  }
-		  Port {
-		    PortNumber		    7
-		    Name		    "VhclCtrl UserSignal4"
-		  }
-		  Port {
-		    PortNumber		    8
-		    Name		    "VhclCtrl GearNo"
-		  }
-		  Port {
-		    PortNumber		    9
-		    Name		    "VhclCtrl SelectorCtrl"
-		  }
-		  Port {
-		    PortNumber		    10
-		    Name		    "VhclCtrl Brake"
-		  }
-		  Port {
-		    PortNumber		    11
-		    Name		    "VhclCtrl BrakePark"
-		  }
-		  Port {
-		    PortNumber		    12
-		    Name		    "VhclCtrl Clutch"
-		  }
-		  Port {
-		    PortNumber		    13
-		    Name		    "VhclCtrl Gas"
-		  }
-		  Port {
-		    PortNumber		    14
-		    Name		    "VhclCtrl Steering Ang"
-		  }
-		  Port {
-		    PortNumber		    15
-		    Name		    "VhclCtrl Steering AngVel"
-		  }
-		  Port {
-		    PortNumber		    16
-		    Name		    "VhclCtrl Steering AngAcc"
-		  }
-		  Port {
-		    PortNumber		    17
-		    Name		    "VhclCtrl Steering Trq"
-		  }
-		  Port {
-		    PortNumber		    18
-		    Name		    "VhclCtrl Lights LowBeam"
-		  }
-		  Port {
-		    PortNumber		    19
-		    Name		    "VhclCtrl Lights HighBeam"
-		  }
-		  Port {
-		    PortNumber		    20
-		    Name		    "VhclCtrl Lights Daytime"
-		  }
-		  Port {
-		    PortNumber		    21
-		    Name		    "VhclCtrl Lights ParkL"
-		  }
-		  Port {
-		    PortNumber		    22
-		    Name		    "VhclCtrl Lights ParkR"
-		  }
-		  Port {
-		    PortNumber		    23
-		    Name		    "VhclCtrl Lights IndL"
-		  }
-		  Port {
-		    PortNumber		    24
-		    Name		    "VhclCtrl Lights IndR"
-		  }
-		  Port {
-		    PortNumber		    25
-		    Name		    "VhclCtrl Lights FogFrontL"
-		  }
-		  Port {
-		    PortNumber		    26
-		    Name		    "VhclCtrl Lights FogFrontR"
-		  }
-		  Port {
-		    PortNumber		    27
-		    Name		    "VhclCtrl Lights FogRear"
-		  }
-		  Port {
-		    PortNumber		    28
-		    Name		    "VhclCtrl Lights Brake"
-		  }
-		  Port {
-		    PortNumber		    29
-		    Name		    "VhclCtrl Lights Reverse"
-		  }
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Out"
-		  SID			  "2214"
-		  Position		  [355, 237, 385, 253]
-		  ZOrder		  -4
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  ZOrder		  1
-		  SrcBlock		  "In"
-		  SrcPort		  1
-		  DstBlock		  "Demux"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  2
-		  SrcBlock		  "BusCreator"
-		  SrcPort		  1
-		  DstBlock		  "Out"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "VhclCtrl SST"
-		  ZOrder		  3
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  1
-		  DstBlock		  "BusCreator"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "VhclCtrl Key"
-		  ZOrder		  4
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  2
-		  DstBlock		  "BusCreator"
-		  DstPort		  2
-		}
-		Line {
-		  Name			  "VhclCtrl UserSignal0"
-		  ZOrder		  5
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  3
-		  DstBlock		  "BusCreator"
-		  DstPort		  3
-		}
-		Line {
-		  Name			  "VhclCtrl UserSignal1"
-		  ZOrder		  6
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  4
-		  DstBlock		  "BusCreator"
-		  DstPort		  4
-		}
-		Line {
-		  Name			  "VhclCtrl UserSignal2"
-		  ZOrder		  7
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  5
-		  DstBlock		  "BusCreator"
-		  DstPort		  5
-		}
-		Line {
-		  Name			  "VhclCtrl UserSignal3"
-		  ZOrder		  8
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  6
-		  DstBlock		  "BusCreator"
-		  DstPort		  6
-		}
-		Line {
-		  Name			  "VhclCtrl UserSignal4"
-		  ZOrder		  9
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  7
-		  DstBlock		  "BusCreator"
-		  DstPort		  7
-		}
-		Line {
-		  Name			  "VhclCtrl GearNo"
-		  ZOrder		  10
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  8
-		  DstBlock		  "BusCreator"
-		  DstPort		  8
-		}
-		Line {
-		  Name			  "VhclCtrl SelectorCtrl"
-		  ZOrder		  11
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  9
-		  DstBlock		  "BusCreator"
-		  DstPort		  9
-		}
-		Line {
-		  Name			  "VhclCtrl Brake"
-		  ZOrder		  12
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  10
-		  DstBlock		  "BusCreator"
-		  DstPort		  10
-		}
-		Line {
-		  Name			  "VhclCtrl BrakePark"
-		  ZOrder		  13
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  11
-		  DstBlock		  "BusCreator"
-		  DstPort		  11
-		}
-		Line {
-		  Name			  "VhclCtrl Clutch"
-		  ZOrder		  14
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  12
-		  DstBlock		  "BusCreator"
-		  DstPort		  12
-		}
-		Line {
-		  Name			  "VhclCtrl Gas"
-		  ZOrder		  15
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  13
-		  DstBlock		  "BusCreator"
-		  DstPort		  13
-		}
-		Line {
-		  Name			  "VhclCtrl Steering Ang"
-		  ZOrder		  16
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  14
-		  DstBlock		  "BusCreator"
-		  DstPort		  14
-		}
-		Line {
-		  Name			  "VhclCtrl Steering AngVel"
-		  ZOrder		  17
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  15
-		  DstBlock		  "BusCreator"
-		  DstPort		  15
-		}
-		Line {
-		  Name			  "VhclCtrl Steering AngAcc"
-		  ZOrder		  18
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  16
-		  DstBlock		  "BusCreator"
-		  DstPort		  16
-		}
-		Line {
-		  Name			  "VhclCtrl Steering Trq"
-		  ZOrder		  19
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  17
-		  DstBlock		  "BusCreator"
-		  DstPort		  17
-		}
-		Line {
-		  Name			  "VhclCtrl Lights LowBeam"
-		  ZOrder		  20
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  18
-		  DstBlock		  "BusCreator"
-		  DstPort		  18
-		}
-		Line {
-		  Name			  "VhclCtrl Lights HighBeam"
-		  ZOrder		  21
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  19
-		  DstBlock		  "BusCreator"
-		  DstPort		  19
-		}
-		Line {
-		  Name			  "VhclCtrl Lights Daytime"
-		  ZOrder		  22
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  20
-		  DstBlock		  "BusCreator"
-		  DstPort		  20
-		}
-		Line {
-		  Name			  "VhclCtrl Lights ParkL"
-		  ZOrder		  23
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  21
-		  DstBlock		  "BusCreator"
-		  DstPort		  21
-		}
-		Line {
-		  Name			  "VhclCtrl Lights ParkR"
-		  ZOrder		  24
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  22
-		  DstBlock		  "BusCreator"
-		  DstPort		  22
-		}
-		Line {
-		  Name			  "VhclCtrl Lights IndL"
-		  ZOrder		  25
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  23
-		  DstBlock		  "BusCreator"
-		  DstPort		  23
-		}
-		Line {
-		  Name			  "VhclCtrl Lights IndR"
-		  ZOrder		  26
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  24
-		  DstBlock		  "BusCreator"
-		  DstPort		  24
-		}
-		Line {
-		  Name			  "VhclCtrl Lights FogFrontL"
-		  ZOrder		  27
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  25
-		  DstBlock		  "BusCreator"
-		  DstPort		  25
-		}
-		Line {
-		  Name			  "VhclCtrl Lights FogFrontR"
-		  ZOrder		  28
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  26
-		  DstBlock		  "BusCreator"
-		  DstPort		  26
-		}
-		Line {
-		  Name			  "VhclCtrl Lights FogRear"
-		  ZOrder		  29
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  27
-		  DstBlock		  "BusCreator"
-		  DstPort		  27
-		}
-		Line {
-		  Name			  "VhclCtrl Lights Brake"
-		  ZOrder		  30
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  28
-		  DstBlock		  "BusCreator"
-		  DstPort		  28
-		}
-		Line {
-		  Name			  "VhclCtrl Lights Reverse"
-		  ZOrder		  31
-		  Labels		  [0, 0]
-		  SrcBlock		  "Demux"
-		  SrcPort		  29
-		  DstBlock		  "BusCreator"
-		  DstPort		  29
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
 	      Name		      "CreateBus VhclCtrl.PT"
 	      SID		      "2215"
 	      Ports		      [1, 1]
@@ -16632,6 +16287,556 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CreateBus VhclCtrl1"
+	      SID		      "2624"
+	      Ports		      [3, 1]
+	      Position		      [1145, 560, 1230, 640]
+	      ZOrder		      10
+	      RequestExecContextInheritance off
+	      System {
+		Name			"CreateBus VhclCtrl1"
+		Location		[-7, -7, 1543, 831]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In"
+		  SID			  "2625"
+		  Position		  [50, 242, 80, 258]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Brake"
+		  SID			  "2626"
+		  Position		  [50, 492, 80, 508]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Gas"
+		  SID			  "2627"
+		  Position		  [50, 532, 80, 548]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  BusCreator
+		  Name			  "BusCreator1"
+		  SID			  "2628"
+		  Ports			  [29, 1]
+		  Position		  [305, 32, 310, 468]
+		  ZOrder		  -4
+		  ShowName		  off
+		  Inputs		  "29"
+		  InheritFromInputs	  on
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux1"
+		  SID			  "2629"
+		  Ports			  [1, 29]
+		  Position		  [115, 32, 120, 468]
+		  ZOrder		  -5
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		  Outputs		  "29"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VhclCtrl SST"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "VhclCtrl Key"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "VhclCtrl UserSignal0"
+		  }
+		  Port {
+		    PortNumber		    4
+		    Name		    "VhclCtrl UserSignal1"
+		  }
+		  Port {
+		    PortNumber		    5
+		    Name		    "VhclCtrl UserSignal2"
+		  }
+		  Port {
+		    PortNumber		    6
+		    Name		    "VhclCtrl UserSignal3"
+		  }
+		  Port {
+		    PortNumber		    7
+		    Name		    "VhclCtrl UserSignal4"
+		  }
+		  Port {
+		    PortNumber		    8
+		    Name		    "VhclCtrl GearNo"
+		  }
+		  Port {
+		    PortNumber		    9
+		    Name		    "VhclCtrl SelectorCtrl"
+		  }
+		  Port {
+		    PortNumber		    10
+		    Name		    "VhclCtrl Brake"
+		  }
+		  Port {
+		    PortNumber		    11
+		    Name		    "VhclCtrl BrakePark"
+		  }
+		  Port {
+		    PortNumber		    12
+		    Name		    "VhclCtrl Clutch"
+		  }
+		  Port {
+		    PortNumber		    13
+		    Name		    "VhclCtrl Gas"
+		  }
+		  Port {
+		    PortNumber		    14
+		    Name		    "VhclCtrl Steering Ang"
+		  }
+		  Port {
+		    PortNumber		    15
+		    Name		    "VhclCtrl Steering AngVel"
+		  }
+		  Port {
+		    PortNumber		    16
+		    Name		    "VhclCtrl Steering AngAcc"
+		  }
+		  Port {
+		    PortNumber		    17
+		    Name		    "VhclCtrl Steering Trq"
+		  }
+		  Port {
+		    PortNumber		    18
+		    Name		    "VhclCtrl Lights LowBeam"
+		  }
+		  Port {
+		    PortNumber		    19
+		    Name		    "VhclCtrl Lights HighBeam"
+		  }
+		  Port {
+		    PortNumber		    20
+		    Name		    "VhclCtrl Lights Daytime"
+		  }
+		  Port {
+		    PortNumber		    21
+		    Name		    "VhclCtrl Lights ParkL"
+		  }
+		  Port {
+		    PortNumber		    22
+		    Name		    "VhclCtrl Lights ParkR"
+		  }
+		  Port {
+		    PortNumber		    23
+		    Name		    "VhclCtrl Lights IndL"
+		  }
+		  Port {
+		    PortNumber		    24
+		    Name		    "VhclCtrl Lights IndR"
+		  }
+		  Port {
+		    PortNumber		    25
+		    Name		    "VhclCtrl Lights FogFrontL"
+		  }
+		  Port {
+		    PortNumber		    26
+		    Name		    "VhclCtrl Lights FogFrontR"
+		  }
+		  Port {
+		    PortNumber		    27
+		    Name		    "VhclCtrl Lights FogRear"
+		  }
+		  Port {
+		    PortNumber		    28
+		    Name		    "VhclCtrl Lights Brake"
+		  }
+		  Port {
+		    PortNumber		    29
+		    Name		    "VhclCtrl Lights Reverse"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator2"
+		  SID			  "2630"
+		  Position		  [230, 165, 250, 185]
+		  ZOrder		  -6
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator3"
+		  SID			  "2631"
+		  Position		  [230, 210, 250, 230]
+		  ZOrder		  -7
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out"
+		  SID			  "2632"
+		  Position		  [345, 242, 375, 258]
+		  ZOrder		  -8
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "BusCreator1"
+		  SrcPort		  1
+		  DstBlock		  "Out"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In"
+		  SrcPort		  1
+		  DstBlock		  "Demux1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Brake"
+		  SrcPort		  1
+		  Points		  [190, 0; 0, -325]
+		  DstBlock		  "BusCreator1"
+		  DstPort		  10
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gas"
+		  SrcPort		  1
+		  Points		  [200, 0; 0, -320]
+		  DstBlock		  "BusCreator1"
+		  DstPort		  13
+		}
+		Line {
+		  Name			  "VhclCtrl Gas"
+		  ZOrder		  5
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  13
+		  DstBlock		  "Terminator3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VhclCtrl Brake"
+		  ZOrder		  6
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  10
+		  DstBlock		  "Terminator2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VhclCtrl SST"
+		  ZOrder		  7
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  1
+		  DstBlock		  "BusCreator1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VhclCtrl Key"
+		  ZOrder		  8
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  2
+		  DstBlock		  "BusCreator1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "VhclCtrl UserSignal0"
+		  ZOrder		  9
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  3
+		  DstBlock		  "BusCreator1"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "VhclCtrl UserSignal1"
+		  ZOrder		  10
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  4
+		  DstBlock		  "BusCreator1"
+		  DstPort		  4
+		}
+		Line {
+		  Name			  "VhclCtrl UserSignal2"
+		  ZOrder		  11
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  5
+		  DstBlock		  "BusCreator1"
+		  DstPort		  5
+		}
+		Line {
+		  Name			  "VhclCtrl UserSignal3"
+		  ZOrder		  12
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  6
+		  DstBlock		  "BusCreator1"
+		  DstPort		  6
+		}
+		Line {
+		  Name			  "VhclCtrl UserSignal4"
+		  ZOrder		  13
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  7
+		  DstBlock		  "BusCreator1"
+		  DstPort		  7
+		}
+		Line {
+		  Name			  "VhclCtrl GearNo"
+		  ZOrder		  14
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  8
+		  DstBlock		  "BusCreator1"
+		  DstPort		  8
+		}
+		Line {
+		  Name			  "VhclCtrl SelectorCtrl"
+		  ZOrder		  15
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  9
+		  DstBlock		  "BusCreator1"
+		  DstPort		  9
+		}
+		Line {
+		  Name			  "VhclCtrl BrakePark"
+		  ZOrder		  16
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  11
+		  DstBlock		  "BusCreator1"
+		  DstPort		  11
+		}
+		Line {
+		  Name			  "VhclCtrl Clutch"
+		  ZOrder		  17
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  12
+		  DstBlock		  "BusCreator1"
+		  DstPort		  12
+		}
+		Line {
+		  Name			  "VhclCtrl Steering Ang"
+		  ZOrder		  18
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  14
+		  DstBlock		  "BusCreator1"
+		  DstPort		  14
+		}
+		Line {
+		  Name			  "VhclCtrl Steering AngVel"
+		  ZOrder		  19
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  15
+		  DstBlock		  "BusCreator1"
+		  DstPort		  15
+		}
+		Line {
+		  Name			  "VhclCtrl Steering AngAcc"
+		  ZOrder		  20
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  16
+		  DstBlock		  "BusCreator1"
+		  DstPort		  16
+		}
+		Line {
+		  Name			  "VhclCtrl Steering Trq"
+		  ZOrder		  21
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  17
+		  DstBlock		  "BusCreator1"
+		  DstPort		  17
+		}
+		Line {
+		  Name			  "VhclCtrl Lights LowBeam"
+		  ZOrder		  22
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  18
+		  DstBlock		  "BusCreator1"
+		  DstPort		  18
+		}
+		Line {
+		  Name			  "VhclCtrl Lights HighBeam"
+		  ZOrder		  23
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  19
+		  DstBlock		  "BusCreator1"
+		  DstPort		  19
+		}
+		Line {
+		  Name			  "VhclCtrl Lights Daytime"
+		  ZOrder		  24
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  20
+		  DstBlock		  "BusCreator1"
+		  DstPort		  20
+		}
+		Line {
+		  Name			  "VhclCtrl Lights ParkL"
+		  ZOrder		  25
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  21
+		  DstBlock		  "BusCreator1"
+		  DstPort		  21
+		}
+		Line {
+		  Name			  "VhclCtrl Lights ParkR"
+		  ZOrder		  26
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  22
+		  DstBlock		  "BusCreator1"
+		  DstPort		  22
+		}
+		Line {
+		  Name			  "VhclCtrl Lights IndL"
+		  ZOrder		  27
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  23
+		  DstBlock		  "BusCreator1"
+		  DstPort		  23
+		}
+		Line {
+		  Name			  "VhclCtrl Lights IndR"
+		  ZOrder		  28
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  24
+		  DstBlock		  "BusCreator1"
+		  DstPort		  24
+		}
+		Line {
+		  Name			  "VhclCtrl Lights FogFrontL"
+		  ZOrder		  29
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  25
+		  DstBlock		  "BusCreator1"
+		  DstPort		  25
+		}
+		Line {
+		  Name			  "VhclCtrl Lights FogFrontR"
+		  ZOrder		  30
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  26
+		  DstBlock		  "BusCreator1"
+		  DstPort		  26
+		}
+		Line {
+		  Name			  "VhclCtrl Lights FogRear"
+		  ZOrder		  31
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  27
+		  DstBlock		  "BusCreator1"
+		  DstPort		  27
+		}
+		Line {
+		  Name			  "VhclCtrl Lights Brake"
+		  ZOrder		  32
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  28
+		  DstBlock		  "BusCreator1"
+		  DstPort		  28
+		}
+		Line {
+		  Name			  "VhclCtrl Lights Reverse"
+		  ZOrder		  33
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux1"
+		  SrcPort		  29
+		  DstBlock		  "BusCreator1"
+		  DstPort		  29
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Define CM Dict"
+	      SID		      "2648"
+	      Ports		      []
+	      Position		      [10, 710, 80, 730]
+	      ZOrder		      13
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Define CM Dict"
+	      SourceType	      "Define CarMaker Dictionary Variable"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "SetSpeed"
+	      xmono		      off
+	      xtype		      "Double4"
+	      xdvaplace		      "DM"
+	      xnstates		      "0"
+	      xfirststate	      "0"
+	      xinitial		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Define CM Dict1"
+	      SID		      "2649"
+	      Ports		      []
+	      Position		      [10, 770, 110, 790]
+	      ZOrder		      14
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Define CM Dict"
+	      SourceType	      "Define CarMaker Dictionary Variable"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "SetSpeed_Active"
+	      xmono		      off
+	      xtype		      "Double4"
+	      xdvaplace		      "DM"
+	      xnstates		      "0"
+	      xfirststate	      "0"
+	      xinitial		      "0"
+	    }
+	    Block {
 	      BlockType		      Demux
 	      Name		      "Demux2"
 	      SID		      "2225"
@@ -16648,6 +16853,673 @@ Model {
 	      Port {
 		PortNumber		2
 		Name			"VhclCtrl BrakePark"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Read CM Dict"
+	      SID		      "2650"
+	      Ports		      [0, 1]
+	      Position		      [435, 720, 505, 740]
+	      ZOrder		      15
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Read CM Dict"
+	      SourceType	      "Read CarMaker Dictionary Variable(s)"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "SetSpeed"
+	      xsync		      off
+	      xstime		      "Continuous"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Read CM Dict1"
+	      SID		      "2651"
+	      Ports		      [0, 1]
+	      Position		      [385, 762, 485, 778]
+	      ZOrder		      16
+	      BackgroundColor	      "orange"
+	      LibraryVersion	      "1.495"
+	      SourceBlock	      "CarMaker4SL/Read CM Dict"
+	      SourceType	      "Read CarMaker Dictionary Variable(s)"
+	      SourceProductName	      "CarMaker4SL"
+	      MultiThreadCoSim	      "auto"
+	      xname		      "SetSpeed_Active"
+	      xsync		      off
+	      xstime		      "Continuous"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "SpeedCtrl"
+	      SID		      "2459"
+	      Ports		      [4, 2]
+	      Position		      [815, 550, 930, 655]
+	      ZOrder		      9
+	      BackgroundColor	      "cyan"
+	      FontSize		      12
+	      RequestExecContextInheritance off
+	      System {
+		Name			"SpeedCtrl"
+		Location		[-7, -7, 1543, 831]
+		Open			on
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  Inport
+		  Name			  "DM Brake"
+		  SID			  "2460"
+		  Position		  [205, 133, 235, 147]
+		  ZOrder		  -1
+		  NamePlacement		  "alternate"
+		  FontSize		  12
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "DM Gas"
+		  SID			  "2461"
+		  Position		  [205, 158, 235, 172]
+		  ZOrder		  -2
+		  FontSize		  12
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "desire speed[m/s]"
+		  SID			  "2633"
+		  Position		  [205, 188, 235, 202]
+		  ZOrder		  2
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Active"
+		  SID			  "2652"
+		  Position		  [205, 233, 235, 247]
+		  ZOrder		  3
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "desired ax"
+		  SID			  "2634"
+		  Ports			  [4, 2]
+		  Position		  [435, 125, 545, 205]
+		  ZOrder		  1
+		  BackgroundColor	  "magenta"
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "desired ax"
+		    Location		    [-7, -7, 1543, 831]
+		    Open		    on
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SimulinkSubDomain	    "Simulink"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Brake"
+		    SID			    "2642"
+		    Position		    [40, -67, 70, -53]
+		    ZOrder		    1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Gas"
+		    SID			    "2643"
+		    Position		    [40, -7, 70, 7]
+		    ZOrder		    2
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "desire speed[m/s]"
+		    SID			    "2635"
+		    Position		    [40, 58, 70, 72]
+		    ZOrder		    -1
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "Set_Speed"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Active"
+		    SID			    "2653"
+		    Position		    [40, 248, 70, 262]
+		    ZOrder		    6
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "MATLAB Function"
+		    SID			    "2646"
+		    Ports		    [4, 2]
+		    Position		    [260, 16, 330, 64]
+		    ZOrder		    5
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    ContentPreviewEnabled   on
+		    Port {
+		    PortNumber		    1
+		    Name		    "Brake"
+		    PropagatedSignals	    "Out_Brake"
+		    }
+		    Port {
+		    PortNumber		    2
+		    Name		    "Gas"
+		    PropagatedSignals	    "Out_Gas"
+		    }
+		    System {
+		    Name		    "MATLAB Function"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "25"
+		    SimulinkSubDomain	    "Simulink"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Brake"
+		    SID			    "2646::22"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    13
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Gas"
+		    SID			    "2646::23"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    14
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Speed"
+		    SID			    "2646::1"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    -1
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Active"
+		    SID			    "2646::25"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    16
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "2646::20"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    11
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "2646::19"
+		    Tag			    "Stateflow S-Function 1"
+		    Ports		    [4, 3]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    10
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 3]"
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    on
+		    SFcnIsStateOwnerBlock   off
+		    Port {
+		    PortNumber		    2
+		    Name		    "Out_Brake"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "Out_Gas"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "2646::21"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    12
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out_Brake"
+		    SID			    "2646::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out_Gas"
+		    SID			    "2646::24"
+		    Position		    [460, 136, 480, 154]
+		    ZOrder		    15
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    38
+		    SrcBlock		    "Brake"
+		    SrcPort		    1
+		    Points		    [120, 0]
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    39
+		    SrcBlock		    "Gas"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    40
+		    SrcBlock		    "Speed"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    41
+		    SrcBlock		    "Active"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "Out_Brake"
+		    ZOrder		    42
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "Out_Brake"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "Out_Gas"
+		    ZOrder		    43
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    3
+		    DstBlock		    "Out_Gas"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    44
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    45
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Read Car.v[m/s]"
+		    SID			    "2637"
+		    Ports		    [0, 1]
+		    Position		    [20, 150, 90, 170]
+		    ZOrder		    -3
+		    BackgroundColor	    "orange"
+		    LibraryVersion	    "1.495"
+		    SourceBlock		    "CarMaker4SL/Read CM Dict"
+		    SourceType		    "Read CarMaker Dictionary Variable(s)"
+		    SourceProductName	    "CarMaker4SL"
+		    MultiThreadCoSim	    "auto"
+		    xname		    "Car.v"
+		    xsync		    off
+		    xstime		    "Continuous"
+		    Port {
+		    PortNumber		    1
+		    Name		    "Ego_Speed"
+		    }
+		    }
+		    Block {
+		    BlockType		    Scope
+		    Name		    "Scope"
+		    SID			    "2655"
+		    Ports		    [5]
+		    Position		    [605, 221, 765, 349]
+		    ZOrder		    7
+		    ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+		    "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+		    "ources','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('Mi"
+		    "nYLimReal','0.98865','MaxYLimReal','1.00254','YLabelReal','','MinYLimMag','0.98865','MaxYLimMag','1.00254','Lege"
+		    "ndVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
+		    "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294"
+		    "11764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176470"
+		    "58823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
+		    "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'error'}},'ShowContent"
+		    "',true,'Placement',1),struct('MinYLimReal','0.09575','MaxYLimReal','0.51242','YLabelReal','','MinYLimMag','0','M"
+		    "axYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axe"
+		    "sTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450"
+		    "98039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450"
+		    "98039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]"
+		    ",'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'"
+		    "Brake'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','"
+		    "MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+		    "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+		    "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+		    "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+		    "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+		    ",1,'LineNames',{{'Gas'}},'ShowContent',true,'Placement',3),struct('MinYLimReal','-1.73611','MaxYLimReal','15.625"
+		    "','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMag"
+		    "Phase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
+		    "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921"
+		    "56862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 "
+		    "0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNam"
+		    "es',{{}},'NumLines',1,'LineNames',{{'Set_Speed'}},'ShowContent',true,'Placement',4),struct('MinYLimReal','-2.296"
+		    "69','MaxYLimReal','20.67021','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid'"
+		    ",true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922"
+		    " 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882"
+		    "353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 "
+		    "1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',"
+		    "{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Ego_Speed'}},'ShowContent',true,'Placement',5),s"
+		    "truct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVis"
+		    "ibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980"
+		    "3922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764"
+		    "706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823"
+		    "529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','','LinePropertie"
+		    "sCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{}},'ShowContent',false,'Placement',6)},'D"
+		    "isplayPropertyDefaults',struct('YLabelReal','','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase'"
+		    ",false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',"
+		    "[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.7176470588"
+		    "23529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745"
+		    "098039215686 0.650980392156863]),'DisplayLayoutDimensions',[3 2],'DisplayContentCache',[]),extmgr.Configuration("
+		    "'Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomY','PreviousAutoscale','XY'),extmgr.Co"
+		    "nfiguration('Tools','Measurements',true,'Version','2019b')),'Version','2019b','Position',[1 41 1536 748.8],'Visi"
+		    "bleAtModelOpen','on')"
+		    NumInputPorts	    "5"
+		    Floating		    off
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum"
+		    SID			    "2639"
+		    Ports		    [2, 1]
+		    Position		    [140, 55, 160, 75]
+		    ZOrder		    -5
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "|+-"
+		    InputSameDT		    off
+		    Port {
+		    PortNumber		    1
+		    Name		    "error"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out_Brake\n"
+		    SID			    "2644"
+		    Position		    [445, 28, 475, 42]
+		    ZOrder		    3
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out_Gas"
+		    SID			    "2645"
+		    Position		    [465, 103, 495, 117]
+		    ZOrder		    4
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "Set_Speed"
+		    ZOrder		    2
+		    SrcBlock		    "desire speed[m/s]"
+		    SrcPort		    1
+		    Points		    [41, 0]
+		    Branch {
+		    ZOrder		    19
+		    Labels		    [2, 1]
+		    Points		    [0, 245]
+		    DstBlock		    "Scope"
+		    DstPort		    4
+		    }
+		    Branch {
+		    ZOrder		    18
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    Name		    "Ego_Speed"
+		    ZOrder		    3
+		    SrcBlock		    "Read Car.v[m/s]"
+		    SrcPort		    1
+		    Points		    [35, 0]
+		    Branch {
+		    ZOrder		    22
+		    Labels		    [2, 1]
+		    Points		    [0, 175]
+		    DstBlock		    "Scope"
+		    DstPort		    5
+		    }
+		    Branch {
+		    ZOrder		    21
+		    Points		    [20, 0]
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    Name		    "error"
+		    ZOrder		    6
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    Points		    [15, 0]
+		    Branch {
+		    ZOrder		    13
+		    Labels		    [2, 1]
+		    Points		    [0, 170]
+		    DstBlock		    "Scope"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    12
+		    Points		    [25, 0; 0, -20]
+		    DstBlock		    "MATLAB Function"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    ZOrder		    7
+		    SrcBlock		    "Brake"
+		    SrcPort		    1
+		    Points		    [142, 0; 0, 85]
+		    DstBlock		    "MATLAB Function"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "Gas"
+		    SrcPort		    1
+		    Points		    [118, 0; 0, 35]
+		    DstBlock		    "MATLAB Function"
+		    DstPort		    2
+		    }
+		    Line {
+		    Name		    "Brake"
+		    ZOrder		    9
+		    SrcBlock		    "MATLAB Function"
+		    SrcPort		    1
+		    Points		    [51, 0]
+		    Branch {
+		    ZOrder		    15
+		    Labels		    [2, 1]
+		    Points		    [0, 230]
+		    DstBlock		    "Scope"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    14
+		    Points		    [12, 0; 0, 5]
+		    DstBlock		    "Out_Brake\n"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    Name		    "Gas"
+		    ZOrder		    10
+		    SrcBlock		    "MATLAB Function"
+		    SrcPort		    2
+		    Points		    [32, 0; 0, 55; 56, 0]
+		    Branch {
+		    ZOrder		    17
+		    Labels		    [2, 1]
+		    Points		    [0, 175]
+		    DstBlock		    "Scope"
+		    DstPort		    3
+		    }
+		    Branch {
+		    ZOrder		    16
+		    DstBlock		    "Out_Gas"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "Active"
+		    SrcPort		    1
+		    Points		    [158, 0; 0, -200]
+		    DstBlock		    "MATLAB Function"
+		    DstPort		    4
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VC Brake"
+		  SID			  "2621"
+		  Position		  [660, 138, 690, 152]
+		  ZOrder		  -15
+		  FontSize		  12
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VC Gas"
+		  SID			  "2622"
+		  Position		  [670, 178, 700, 192]
+		  ZOrder		  -16
+		  FontSize		  12
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  42
+		  SrcBlock		  "desired ax"
+		  SrcPort		  2
+		  DstBlock		  "VC Gas"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  30
+		  SrcBlock		  "desire speed[m/s]"
+		  SrcPort		  1
+		  Points		  [95, 0; 0, -20]
+		  DstBlock		  "desired ax"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  35
+		  SrcBlock		  "DM Brake"
+		  SrcPort		  1
+		  Points		  [36, 0; 0, -5]
+		  DstBlock		  "desired ax"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  36
+		  SrcBlock		  "DM Gas"
+		  SrcPort		  1
+		  Points		  [63, 0; 0, -10]
+		  DstBlock		  "desired ax"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  44
+		  SrcBlock		  "Active"
+		  SrcPort		  1
+		  Points		  [144, 0; 0, -45]
+		  DstBlock		  "desired ax"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  43
+		  SrcBlock		  "desired ax"
+		  SrcPort		  1
+		  DstBlock		  "VC Brake"
+		  DstPort		  1
+		}
 	      }
 	    }
 	    Block {
@@ -16741,17 +17613,19 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "CreateBus VhclCtrl"
+	      ZOrder		      25
+	      SrcBlock		      "CreateBus VhclCtrl1"
 	      SrcPort		      1
+	      Points		      [19, 0; 0, -101; -866, 0; 0, -134]
 	      DstBlock		      "VehicleControlUpd"
 	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      2
+	      ZOrder		      24
 	      SrcBlock		      "VehicleControl"
 	      SrcPort		      2
-	      DstBlock		      "CreateBus VhclCtrl"
+	      Points		      [106, 0; 0, 146; 791, 0; 0, 64]
+	      DstBlock		      "CreateBus VhclCtrl1"
 	      DstPort		      1
 	    }
 	    Line {
@@ -16800,7 +17674,6 @@ Model {
 	      ZOrder		      9
 	      SrcBlock		      "CreateBus Vhcl.Misc"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "Vhcl.Misc"
 	      DstPort		      1
 	    }
@@ -16808,7 +17681,6 @@ Model {
 	      ZOrder		      10
 	      SrcBlock		      "CreateBus Vhcl.Wheel.In"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "Vhcl.Wheel.In"
 	      DstPort		      1
 	    }
@@ -16816,8 +17688,18 @@ Model {
 	      ZOrder		      11
 	      SrcBlock		      "DrivMan.In"
 	      SrcPort		      1
-	      DstBlock		      "VehicleControl"
-	      DstPort		      2
+	      Points		      [15, 0]
+	      Branch {
+		ZOrder			27
+		Points			[0, 225]
+		DstBlock		"Bus\nSelector"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			26
+		DstBlock		"VehicleControl"
+		DstPort			2
+	      }
 	    }
 	    Line {
 	      ZOrder		      12
@@ -16844,7 +17726,6 @@ Model {
 	      ZOrder		      15
 	      SrcBlock		      "Bus\nCreator2"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "VhclCtrl.Brake"
 	      DstPort		      1
 	    }
@@ -16868,7 +17749,6 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Demux2"
 	      SrcPort		      2
-	      Points		      [0, 0]
 	      DstBlock		      "Bus\nCreator2"
 	      DstPort		      2
 	    }
@@ -16878,9 +17758,59 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Demux2"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "Bus\nCreator2"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "SpeedCtrl"
+	      SrcPort		      1
+	      Points		      [98, 0; 0, 20]
+	      DstBlock		      "CreateBus VhclCtrl1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "SpeedCtrl"
+	      SrcPort		      2
+	      Points		      [98, 0; 0, -5]
+	      DstBlock		      "CreateBus VhclCtrl1"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<DrivMan Gas>"
+	      ZOrder		      22
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      2
+	      Points		      [103, 0; 0, -25]
+	      DstBlock		      "SpeedCtrl"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<DrivMan Brake>"
+	      ZOrder		      23
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      1
+	      DstBlock		      "SpeedCtrl"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      31
+	      SrcBlock		      "Read CM Dict"
+	      SrcPort		      1
+	      Points		      [262, 0; 0, -115]
+	      DstBlock		      "SpeedCtrl"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      32
+	      SrcBlock		      "Read CM Dict1"
+	      SrcPort		      1
+	      Points		      [301, 0; 0, -130]
+	      DstBlock		      "SpeedCtrl"
+	      DstPort		      4
 	    }
 	    Annotation {
 	      SID		      "2236"
@@ -17028,7 +17958,7 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		26
+	$ObjectID		30
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('CarMakerGUI.png'));"
       }
@@ -17109,12 +18039,12 @@ Stateflow {
     id			    1
     name		    "generic"
     sfVersion		    80000019
-    firstTarget		    17
+    firstTarget		    28
   }
   chart {
     id			    2
     machine		    1
-    name		    "CarMaker/Sensor/For Iterator\nSubsystem/MATLAB Function"
+    name		    "CarMaker/VehicleControl/SpeedCtrl/desired ax/MATLAB Function"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
@@ -17123,17 +18053,17 @@ Stateflow {
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    40
+    ssIdHighWaterMark	    9
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    chartFileNumber	    2
+    chartFileNumber	    1
     disableImplicitCasting  1
     eml {
       name		      "fcn"
     }
     firstData		    4
-    firstTransition	    15
-    firstJunction	    14
+    firstTransition	    11
+    firstJunction	    10
   }
   state {
     id			    3
@@ -17149,24 +18079,18 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [Object_dx,Object_dy,Vel_x,ObjectType,Object_ID] = ...\n    fcn(width,RefPt_dx,RefPt_dy,"
-      "...\n    v_x,Obj_idx)\n%% We need to define Local Variables and persist the data for multiple traffic Objects\n%"
-      " Create a vector dynamically based on the ObjDetected & Obj_idx\n\npersistent  local_Posx local_Posy ...\n     l"
-      "ocal_vx ...\n     local_ObjectType local_Object_ID\n \nif isempty(local_Posx) || Obj_idx == 0 || isempty(local_O"
-      "bject_ID)\n    \n    local_Posx   = zeros(5,1) ;\n    local_Posy   = zeros(5,1) ;\n    \n    local_vx     = zero"
-      "s(5,1) ;\n   \n    local_ObjectType = zeros(5,1);\n    local_Object_ID  = zeros(5,1);\nend\n\n\n    local_Posx(O"
-      "bj_idx+1,1)   = RefPt_dx ;\n    local_Posy(Obj_idx+1,1)   = RefPt_dy ;\n \n    local_vx(Obj_idx+1,1)     = v_x ;"
-      "\n\n    local_Object_ID(Obj_idx+1,1) = Obj_idx+1;\n    \n    if(width<1)\n         local_ObjectType(Obj_idx+1,1)"
-      "=2;\n    else\n        local_ObjectType(Obj_idx+1,1)=4;\n    end\n    \n\nObject_dx = local_Posx ;\nObject_dy = "
-      "local_Posy ;\n\nVel_x = local_vx ;\n\nObjectType = local_ObjectType;\nObject_ID = local_Object_ID;\n\nend"
+      script		      "function [Out_Brake,Out_Gas] = fcn(Brake, Gas, Speed,Active)\n\nif(Active)\n    if(Speed<0 && abs"
+      "(Speed)==0)\n            Out_Brake = 0.5;\n            Out_Gas =0;\n    elseif((Speed>0 && abs(Speed)>1))\n     "
+      "       Out_Gas = 0.5;\n            Out_Brake = 0;\n    else\n        Out_Brake=0;\n        Out_Gas = 0;\n    end"
+      "\n    \nelse\n    Out_Brake=Brake;\n    Out_Gas = Gas;\nend\n\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
   data {
     id			    4
-    ssIdNumber		    5
-    name		    "Object_dx"
-    scope		    OUTPUT_DATA
+    ssIdNumber		    6
+    name		    "Brake"
+    scope		    INPUT_DATA
     machine		    1
     props {
       array {
@@ -17175,9 +18099,11 @@ Stateflow {
       type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
       }
       complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
+      frame		      SF_FRAME_INHERITED
       unit {
 	name			"inherit"
       }
@@ -17188,7 +18114,7 @@ Stateflow {
   data {
     id			    5
     ssIdNumber		    7
-    name		    "width"
+    name		    "Gas"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -17212,6 +18138,236 @@ Stateflow {
   }
   data {
     id			    6
+    ssIdNumber		    4
+    name		    "Speed"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 5 7]
+  }
+  data {
+    id			    7
+    ssIdNumber		    5
+    name		    "Out_Brake"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 6 8]
+  }
+  data {
+    id			    8
+    ssIdNumber		    8
+    name		    "Out_Gas"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 7 9]
+  }
+  data {
+    id			    9
+    ssIdNumber		    9
+    name		    "Active"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 8 0]
+  }
+  junction {
+    id			    10
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [2 0 0]
+  }
+  transition {
+    id			    11
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+    linkNode		    [2 0 0]
+  }
+  instance {
+    id			    12
+    machine		    1
+    name		    "CarMaker/VehicleControl/SpeedCtrl/desired ax/MATLAB Function"
+    chart		    2
+  }
+  chart {
+    id			    13
+    machine		    1
+    name		    "CarMaker/Sensor/For Iterator\nSubsystem/MATLAB Function"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 14 0 0]
+    viewObj		    13
+    ssIdHighWaterMark	    40
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+    firstData		    15
+    firstTransition	    26
+    firstJunction	    25
+  }
+  state {
+    id			    14
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    13
+    treeNode		    [13 0 0 0]
+    superState		    SUBCHART
+    subviewer		    13
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [Object_dx,Object_dy,Vel_x,ObjectType,Object_ID] = ...\n    fcn(width,RefPt_dx,RefPt_dy,"
+      "...\n    v_x,Obj_idx)\n%% We need to define Local Variables and persist the data for multiple traffic Objects\n%"
+      " Create a vector dynamically based on the ObjDetected & Obj_idx\n\npersistent  local_Posx local_Posy ...\n     l"
+      "ocal_vx ...\n     local_ObjectType local_Object_ID\n \nif isempty(local_Posx) || Obj_idx == 0 || isempty(local_O"
+      "bject_ID)\n    \n    local_Posx   = zeros(5,1) ;\n    local_Posy   = zeros(5,1) ;\n    \n    local_vx     = zero"
+      "s(5,1) ;\n   \n    local_ObjectType = zeros(5,1);\n    local_Object_ID  = zeros(5,1);\nend\n\n\n    local_Posx(O"
+      "bj_idx+1,1)   = RefPt_dx ;\n    local_Posy(Obj_idx+1,1)   = RefPt_dy ;\n \n    local_vx(Obj_idx+1,1)     = v_x ;"
+      "\n\n    local_Object_ID(Obj_idx+1,1) = Obj_idx+1;\n    \n    if(width<1)\n         local_ObjectType(Obj_idx+1,1)"
+      "=2;\n    else\n        local_ObjectType(Obj_idx+1,1)=4;\n    end\n    \n\nObject_dx = local_Posx ;\nObject_dy = "
+      "local_Posy ;\n\nVel_x = local_vx ;\n\nObjectType = local_ObjectType;\nObject_ID = local_Object_ID;\n\nend"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    15
+    ssIdNumber		    5
+    name		    "Object_dx"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [13 0 16]
+  }
+  data {
+    id			    16
+    ssIdNumber		    7
+    name		    "width"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [13 15 17]
+  }
+  data {
+    id			    17
     ssIdNumber		    9
     name		    "RefPt_dx"
     scope		    INPUT_DATA
@@ -17233,10 +18389,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 5 7]
+    linkNode		    [13 16 18]
   }
   data {
-    id			    7
+    id			    18
     ssIdNumber		    10
     name		    "RefPt_dy"
     scope		    INPUT_DATA
@@ -17258,10 +18414,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 6 8]
+    linkNode		    [13 17 19]
   }
   data {
-    id			    8
+    id			    19
     ssIdNumber		    12
     name		    "v_x"
     scope		    INPUT_DATA
@@ -17283,10 +18439,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 7 9]
+    linkNode		    [13 18 20]
   }
   data {
-    id			    9
+    id			    20
     ssIdNumber		    21
     name		    "Obj_idx"
     scope		    INPUT_DATA
@@ -17308,10 +18464,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 8 10]
+    linkNode		    [13 19 21]
   }
   data {
-    id			    10
+    id			    21
     ssIdNumber		    22
     name		    "Object_dy"
     scope		    OUTPUT_DATA
@@ -17333,10 +18489,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 9 11]
+    linkNode		    [13 20 22]
   }
   data {
-    id			    11
+    id			    22
     ssIdNumber		    27
     name		    "Vel_x"
     scope		    OUTPUT_DATA
@@ -17358,10 +18514,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 10 12]
+    linkNode		    [13 21 23]
   }
   data {
-    id			    12
+    id			    23
     ssIdNumber		    39
     name		    "ObjectType"
     scope		    OUTPUT_DATA
@@ -17383,10 +18539,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 11 13]
+    linkNode		    [13 22 24]
   }
   data {
-    id			    13
+    id			    24
     ssIdNumber		    40
     name		    "Object_ID"
     scope		    OUTPUT_DATA
@@ -17408,19 +18564,19 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 12 0]
+    linkNode		    [13 23 0]
   }
   junction {
-    id			    14
+    id			    25
     position		    [23.5747 49.5747 7]
-    chart		    2
-    subviewer		    2
+    chart		    13
+    subviewer		    13
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
-    linkNode		    [2 0 0]
+    linkNode		    [13 0 0]
   }
   transition {
-    id			    15
+    id			    26
     labelString		    "{eML_blk_kernel();}"
     labelPosition	    [28.125 13.875 102.544 14.964]
     fontSize		    12
@@ -17428,29 +18584,29 @@ Stateflow {
       intersection	      [0 0 1 0 23.5747 14.625 0 0]
     }
     dst {
-      id		      14
+      id		      25
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
-    chart		    2
+    chart		    13
     dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    2
+    subviewer		    13
     drawStyle		    SMART
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    2
-    linkNode		    [2 0 0]
+    linkNode		    [13 0 0]
   }
   instance {
-    id			    16
+    id			    27
     machine		    1
     name		    "CarMaker/Sensor/For Iterator\nSubsystem/MATLAB Function"
-    chart		    2
+    chart		    13
   }
   target {
-    id			    17
+    id			    28
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
